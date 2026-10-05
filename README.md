@@ -1,4 +1,4 @@
-# Floricultura Jardins 🌷
+# Floricultura Jardins
 
 Landing page da **Floricultura Jardins**, uma floricultura fictícia, com foco na campanha de **Dia das Mães**.
 Projeto desenvolvido para atividade acadêmica.
@@ -25,8 +25,8 @@ Em **Settings → Pages**, escolha a branch e a pasta `/ (root)`. O site fica di
 index.html          → todas as seções da página
 css/style.css       → identidade visual, layout, responsividade e animações
 js/main.js          → menu, animações ao rolar, carrossel, modal, galeria e formulário
-assets/favicon.svg  → ícone da tulipa
-assets/img/         → fotos do buquê, box de flores, planta e cesta de presente
+assets/favicon.png  → ícone da aba do navegador (flores do logotipo)
+assets/img/         → logotipo (logo-jardins), emblema de flores e fotos do buquê, box, planta e cesta
 assets/fonts/       → Playfair Display e Montserrat (licença OFL), funcionam offline
 ```
 

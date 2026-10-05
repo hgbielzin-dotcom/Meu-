@@ -99,7 +99,7 @@
   /* Medidas */
   --container: 1200px;
   --gutter: clamp(16px, 4vw, 40px);
-  --header-h: 84px;
+  --header-h: 100px;
   --sec-pad: clamp(88px, 10vw, 140px);
 }
 
@@ -399,39 +399,21 @@ address { font-style: normal; }
   backdrop-filter: saturate(1.4) blur(14px);
   box-shadow: 0 10px 30px -18px rgba(47, 54, 48, .28);
 }
-.header.is-scrolled .header__inner { height: 70px; }
+.header.is-scrolled .header__inner { height: 74px; }
 
 .logo {
   display: inline-flex;
   align-items: center;
-  gap: .6rem;
   flex-shrink: 0;
 }
-.logo__mark {
-  width: 38px;
-  height: 38px;
-  transition: transform .6s var(--ease-out);
+.logo__img {
+  width: auto;
+  height: 84px;
+  transition: height .45s var(--ease), transform .6s var(--ease-out);
 }
-.logo:hover .logo__mark { transform: rotate(-8deg) scale(1.06); }
-.logo__text { display: flex; flex-direction: column; line-height: 1; }
-.logo__name {
-  font-family: var(--f-titulo);
-  font-size: 1.5rem;
-  font-weight: 500;
-  letter-spacing: .01em;
-  color: var(--verde);
-}
-.logo__tag {
-  margin-top: .3rem;
-  padding-left: .1em;
-  font-size: .58rem;
-  font-weight: 500;
-  letter-spacing: .38em;
-  text-transform: uppercase;
-  color: var(--salvia);
-}
-.logo--claro { --logo-caule: var(--rosa-claro); }
-.logo--claro .logo__name { color: var(--creme); }
+.logo:hover .logo__img { transform: scale(1.03); }
+.header.is-scrolled .logo__img { height: 60px; }
+.menu-mobile .logo__img { height: 56px; }
 
 .nav__list { display: flex; gap: clamp(1rem, 2.2vw, 2.2rem); }
 .nav__link {
@@ -750,7 +732,7 @@ address { font-style: normal; }
   letter-spacing: 3.6px;
   fill: var(--verde);
 }
-.selo__centro { width: 46px; height: 46px; }
+.selo__centro { width: 58px; height: 58px; object-fit: contain; }
 .selo__centro--icone {
   width: 34px;
   height: 34px;
@@ -1771,7 +1753,7 @@ address { font-style: normal; }
   font-style: italic;
   line-height: 1.4;
 }
-.loja__legenda .logo__mark { width: 30px; height: 30px; }
+.loja__emblema { flex-shrink: 0; width: 36px; height: 36px; object-fit: contain; }
 
 /* ==========================================================================
    CONTATO
@@ -2037,6 +2019,12 @@ address { font-style: normal; }
   grid-template-columns: 1.4fr repeat(3, minmax(0, 1fr));
   gap: 2.4rem;
 }
+.logo--rodape {
+  padding: .9rem 1.3rem;
+  border-radius: var(--raio);
+  background: var(--creme);
+}
+.logo--rodape .logo__img { height: 104px; }
 .footer__frase {
   max-width: 20ch;
   margin-top: 1.2rem;
@@ -2359,11 +2347,11 @@ address { font-style: normal; }
 }
 
 @media (max-width: 640px) {
-  :root { --header-h: 72px; }
+  :root { --header-h: 76px; }
   .header.is-scrolled .header__inner { height: 64px; }
+  .logo__img { height: 60px; }
+  .header.is-scrolled .logo__img { height: 50px; }
   .header__cta { display: none; }
-  .logo__mark { width: 34px; height: 34px; }
-  .logo__name { font-size: 1.4rem; }
 
   .hero__actions .btn { flex: 1 1 100%; }
   .hero__trust { gap: .5rem 1.2rem; font-size: .76rem; }
@@ -2373,7 +2361,7 @@ address { font-style: normal; }
   .hero__card-title { font-size: 1rem; }
   .selo { width: 104px; height: 104px; }
   .selo--hero { right: 0; }
-  .selo__centro { width: 38px; height: 38px; }
+  .selo__centro { width: 46px; height: 46px; }
 
   .produtos__grid { grid-template-columns: minmax(0, 1fr); }
   .colecoes__grid { gap: 12px; }
