@@ -1,0 +1,1132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Floricultura Jardins</title>
+  <meta name="description" content="Floricultura Jardins: buquês, arranjos e presentes preparados com carinho. Conheça a coleção especial de Dia das Mães.">
+  <meta name="theme-color" content="#FFF8F2">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
+  <!-- Fontes hospedadas no próprio projeto (Playfair Display e Montserrat, licença OFL) -->
+  <link rel="preload" href="assets/fonts/playfair-display-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/montserrat-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Marca que o JS está ativo: as animações de entrada só escondem os elementos quando há JS para revelá-los -->
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <!-- Ícones (Lucide, ISC) e marcas (Font Awesome Free, CC BY 4.0) -->
+  <svg class="sprite" aria-hidden="true" focusable="false">
+    <symbol id="i-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"/><rect x="2" y="4" width="20" height="16" rx="2"/></symbol>
+    <symbol id="i-map-pin" viewBox="0 0 24 24"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24"><path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"/></symbol>
+    <symbol id="i-leaf" viewBox="0 0 24 24"><path d="M11 20a10 10 0 0010-10 25.9 25.9 0 00-1.04-7.281 1 1 0 00-1.755-.325C15.833 5.5 13 5.5 9.8 6.1A7 7 0 0011 20"/><path d="M2 21a5 5 0 012.911-4.544C7.613 15.212 8.351 15.24 11 13"/></symbol>
+    <symbol id="i-sparkles" viewBox="0 0 24 24"><path d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z"/><path d="M20 2v4"/><path d="M22 4h-4"/><circle cx="4" cy="20" r="2"/></symbol>
+    <symbol id="i-handshake" viewBox="0 0 24 24"><path d="m11 17 2 2a1 1 0 1 0 3-3"/><path d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-3-3l2.81-2.81a5.79 5.79 0 0 1 7.06-.87l.47.28a2 2 0 0 0 1.42.25L21 4"/><path d="m21 3 1 11h-2"/><path d="M3 3 2 14l6.5 6.5a1 1 0 1 0 3-3"/><path d="M3 4h8"/></symbol>
+    <symbol id="i-flower" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 16.5A4.5 4.5 0 1 1 7.5 12 4.5 4.5 0 1 1 12 7.5a4.5 4.5 0 1 1 4.5 4.5 4.5 4.5 0 1 1-4.5 4.5"/><path d="M12 7.5V9"/><path d="M7.5 12H9"/><path d="M16.5 12H15"/><path d="M12 16.5V15"/><path d="m8 8 1.88 1.88"/><path d="M14.12 9.88 16 8"/><path d="m8 16 1.88-1.88"/><path d="M14.12 14.12 16 16"/></symbol>
+    <symbol id="i-flower-2" viewBox="0 0 24 24"><path d="M12 5a3 3 0 1 1 3 3m-3-3a3 3 0 1 0-3 3m3-3v1M9 8a3 3 0 1 0 3 3M9 8h1m5 0a3 3 0 1 1-3 3m3-3h-1m-2 3v-1"/><circle cx="12" cy="8" r="2"/><path d="M12 10v12"/><path d="M12 22c4.2 0 7-1.667 7-5-4.2 0-7 1.667-7 5Z"/><path d="M12 22c-4.2 0-7-1.667-7-5 4.2 0 7 1.667 7 5Z"/></symbol>
+    <symbol id="i-truck" viewBox="0 0 24 24"><path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"/><path d="M15 18H9"/><path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14"/><circle cx="17" cy="18" r="2"/><circle cx="7" cy="18" r="2"/></symbol>
+    <symbol id="i-gift" viewBox="0 0 24 24"><path d="M12 7v14"/><path d="M20 11v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-8"/><path d="M7.5 7a1 1 0 0 1 0-5A4.8 8 0 0 1 12 7a4.8 8 0 0 1 4.5-5 1 1 0 0 1 0 5"/><rect x="3" y="7" width="18" height="4" rx="1"/></symbol>
+    <symbol id="i-sprout" viewBox="0 0 24 24"><path d="M14 9.536V7a4 4 0 0 1 4-4h1.5a.5.5 0 0 1 .5.5V5a4 4 0 0 1-4 4 4 4 0 0 0-4 4c0 2 1 3 1 5a5 5 0 0 1-1 3"/><path d="M4 9a5 5 0 0 1 8 4 5 5 0 0 1-8-4"/><path d="M5 21h14"/></symbol>
+    <symbol id="i-eye" viewBox="0 0 24 24"><path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0"/><circle cx="12" cy="12" r="3"/></symbol>
+    <symbol id="i-headset" viewBox="0 0 24 24"><path d="M3 11h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-5Zm0 0a9 9 0 1 1 18 0m0 0v5a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3Z"/><path d="M21 16v2a4 4 0 0 1-4 4h-5"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 6h16"/><path d="M4 12h16"/><path d="M4 18h10"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></symbol>
+    <symbol id="i-calendar-heart" viewBox="0 0 24 24"><path d="M12.127 21H5a2 2 0 01-2-2V5a2 2 0 012-2h14a2 2 0 012 2v5.125"/><path d="M14.62 17.8A2.25 2.25 0 1118 14.836a2.25 2.25 0 113.38 2.966l-2.626 2.856a.998.998 0 01-1.507 0z"/><path d="M16 2v3"/><path d="M3 9h18"/><path d="M8 2v3"/></symbol>
+    <symbol id="i-pen-line" viewBox="0 0 24 24"><path d="M13 21h8"/><path d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z"/></symbol>
+    <symbol id="i-navigation" viewBox="0 0 24 24"><polygon points="3 11 22 2 13 21 11 13 3 11"/></symbol>
+    <symbol id="i-send" viewBox="0 0 24 24"><path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"/><path d="m21.854 2.147-10.94 10.939"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+    <symbol id="i-message" viewBox="0 0 24 24"><path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719"/></symbol>
+    <symbol id="i-chevron-left" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></symbol>
+    <symbol id="i-chevron-right" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></symbol>
+    <symbol id="i-scissors" viewBox="0 0 24 24"><circle cx="6" cy="6" r="3"/><path d="M8.12 8.12 12 12"/><path d="M20 4 8.12 15.88"/><circle cx="6" cy="18" r="3"/><path d="M14.8 14.8 20 20"/></symbol>
+    <symbol id="i-zoom" viewBox="0 0 24 24"><path d="M15 3h6v6"/><path d="m21 3-7 7"/><path d="m3 21 7-7"/><path d="M9 21H3v-6"/></symbol>
+
+    <symbol id="b-instagram" viewBox="0 0 448 512"><path fill="currentColor" stroke="none" d="M224.3 141a115 115 0 1 0 -.6 230 115 115 0 1 0 .6-230zm-.6 40.4a74.6 74.6 0 1 1 .6 149.2 74.6 74.6 0 1 1 -.6-149.2zm93.4-45.1a26.8 26.8 0 1 1 53.6 0 26.8 26.8 0 1 1 -53.6 0zm129.7 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM399 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></symbol>
+    <symbol id="b-facebook" viewBox="0 0 320 512"><path fill="currentColor" stroke="none" d="M80 299.3l0 212.7 116 0 0-212.7 86.5 0 18-97.8-104.5 0 0-34.6c0-51.7 20.3-71.5 72.7-71.5 16.3 0 29.4 .4 37 1.2l0-88.7C291.4 4 256.4 0 236.2 0 129.3 0 80 50.5 80 159.4l0 42.1-66 0 0 97.8 66 0z"/></symbol>
+    <symbol id="b-tiktok" viewBox="0 0 448 512"><path fill="currentColor" stroke="none" d="M448.5 209.9c-44 .1-87-13.6-122.8-39.2l0 178.7c0 33.1-10.1 65.4-29 92.6s-45.6 48-76.6 59.6-64.8 13.5-96.9 5.3-60.9-25.9-82.7-50.8-35.3-56-39-88.9 2.9-66.1 18.6-95.2 40-52.7 69.6-67.7 62.9-20.5 95.7-16l0 89.9c-15-4.7-31.1-4.6-46 .4s-27.9 14.6-37 27.3-14 28.1-13.9 43.9 5.2 31 14.5 43.7 22.4 22.1 37.4 26.9 31.1 4.8 46-.1 28-14.4 37.2-27.1 14.2-28.1 14.2-43.8l0-349.4 88 0c-.1 7.4 .6 14.9 1.9 22.2 3.1 16.3 9.4 31.9 18.7 45.7s21.3 25.6 35.2 34.6c19.9 13.1 43.2 20.1 67 20.1l0 87.4z"/></symbol>
+    <symbol id="b-whatsapp" viewBox="0 0 448 512"><path fill="currentColor" stroke="none" d="M380.9 97.1c-41.9-42-97.7-65.1-157-65.1-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480 117.7 449.1c32.4 17.7 68.9 27 106.1 27l.1 0c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3 18.6-68.1-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1s56.2 81.2 56.1 130.5c0 101.8-84.9 184.6-186.6 184.6zM325.1 300.5c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8s-14.3 18-17.6 21.8c-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7 .9-6.9-.5-9.7s-12.5-30.1-17.1-41.2c-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2s-9.7 1.4-14.8 6.9c-5.1 5.6-19.4 19-19.4 46.3s19.9 53.7 22.6 57.4c2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4s4.6-24.1 3.2-26.4c-1.3-2.5-5-3.9-10.5-6.6z"/></symbol>
+
+    <!-- Marca da floricultura: tulipa -->
+    <symbol id="logo-tulipa" viewBox="0 0 32 32">
+      <path d="M16 18v10" style="stroke: var(--logo-caule, #435B46)" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+      <path d="M16 25.5c-3.6-.3-6.1-2.5-7.1-5.6 3.5.1 6.1 2 7.1 5.6z" fill="#8FA98C" stroke="none"/>
+      <path d="M16 23.5c2.9-.6 4.9-2.6 5.5-5.3-2.9.3-4.9 2.1-5.5 5.3z" fill="#8FA98C" stroke="none"/>
+      <path d="M9.5 7.5C9.5 13.5 12.1 18 16 18s6.5-4.5 6.5-10.5l-3.3 2.6L16 5l-3.2 5.1z" fill="#E8A6B5" stroke="none"/>
+      <path d="M16 6.5c-1.3 3.6-1.3 7.6 0 11" stroke="#C97C8F" stroke-width=".8" stroke-linecap="round" fill="none" opacity=".55"/>
+    </symbol>
+
+    <!-- Pétala decorativa -->
+    <symbol id="petala" viewBox="0 0 40 40"><path d="M20 2C29 10 33 20 20 38 7 20 11 10 20 2z" stroke="none"/></symbol>
+    <symbol id="folha" viewBox="0 0 40 40"><path d="M4 36C6 16 18 5 36 4 35 22 24 34 4 36z" stroke="none"/><path d="M6 34 30 10" fill="none" stroke="rgba(255,255,255,.55)" stroke-width="1.2"/></symbol>
+  </svg>
+
+  <!-- ========================= HEADER ========================= -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a class="logo" href="#inicio" aria-label="Floricultura Jardins, voltar ao início">
+        <svg class="logo__mark" aria-hidden="true"><use href="#logo-tulipa"/></svg>
+        <span class="logo__text">
+          <span class="logo__name">Jardins</span>
+          <span class="logo__tag">Floricultura</span>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="Navegação principal">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="#inicio">Início</a></li>
+          <li><a class="nav__link" href="#produtos">Produtos</a></li>
+          <li><a class="nav__link" href="#sobre">Sobre Nós</a></li>
+          <li><a class="nav__link" href="#dia-das-maes">Dia das Mães</a></li>
+          <li><a class="nav__link" href="#valores">Valores</a></li>
+          <li><a class="nav__link" href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+
+      <div class="header__actions">
+        <a class="btn btn--primary btn--sm header__cta" href="#contato">
+          Fazer Pedido
+          <svg class="ic" aria-hidden="true"><use href="#i-arrow-right"/></svg>
+        </a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-mobile" aria-label="Abrir menu">
+          <svg class="ic" aria-hidden="true"><use href="#i-menu"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Menu mobile -->
+  <div class="menu-mobile" id="menu-mobile" aria-hidden="true">
+    <div class="menu-mobile__top">
+      <a class="logo" href="#inicio" tabindex="-1">
+        <svg class="logo__mark" aria-hidden="true"><use href="#logo-tulipa"/></svg>
+        <span class="logo__text">
+          <span class="logo__name">Jardins</span>
+          <span class="logo__tag">Floricultura</span>
+        </span>
+      </a>
+      <button class="menu-close" type="button" aria-label="Fechar menu" tabindex="-1">
+        <svg class="ic" aria-hidden="true"><use href="#i-x"/></svg>
+      </button>
+    </div>
+    <ul class="menu-mobile__list">
+      <li style="--i:0"><a href="#inicio" tabindex="-1">Início</a></li>
+      <li style="--i:1"><a href="#produtos" tabindex="-1">Produtos</a></li>
+      <li style="--i:2"><a href="#sobre" tabindex="-1">Sobre Nós</a></li>
+      <li style="--i:3"><a href="#dia-das-maes" tabindex="-1">Dia das Mães</a></li>
+      <li style="--i:4"><a href="#valores" tabindex="-1">Valores</a></li>
+      <li style="--i:5"><a href="#contato" tabindex="-1">Contato</a></li>
+    </ul>
+    <div class="menu-mobile__footer">
+      <a class="btn btn--primary btn--block" href="#contato" tabindex="-1">
+        Fazer Pedido
+        <svg class="ic" aria-hidden="true"><use href="#i-arrow-right"/></svg>
+      </a>
+      <p class="menu-mobile__info">
+        <svg class="ic" aria-hidden="true"><use href="#b-whatsapp"/></svg>
+        (11) 99999-9999 · Rua das Flores, 125
+      </p>
+    </div>
+  </div>
+
+  <main id="conteudo">
+
+    <!-- ========================= HERO ========================= -->
+    <section class="hero" id="inicio" aria-labelledby="hero-titulo">
+      <div class="hero__glow hero__glow--rosa" data-parallax="-0.06" aria-hidden="true"></div>
+      <div class="hero__glow hero__glow--verde" data-parallax="0.05" aria-hidden="true"></div>
+
+      <!-- Pétalas flutuantes -->
+      <div class="petalas" aria-hidden="true">
+        <svg class="petala petala--1"><use href="#petala"/></svg>
+        <svg class="petala petala--2"><use href="#petala"/></svg>
+        <svg class="petala petala--3"><use href="#folha"/></svg>
+        <svg class="petala petala--4"><use href="#petala"/></svg>
+        <svg class="petala petala--5"><use href="#folha"/></svg>
+        <svg class="petala petala--6"><use href="#petala"/></svg>
+        <svg class="petala petala--7"><use href="#petala"/></svg>
+      </div>
+
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <span class="pill pill--rosa hero__badge">
+            <svg class="ic" aria-hidden="true"><use href="#i-heart"/></svg>
+            Especial Dia das Mães
+          </span>
+
+          <h1 class="hero__title" id="hero-titulo">
+            <span class="w" style="--i:0"><span>Flores</span></span>
+            <span class="w" style="--i:1"><span>que</span></span>
+            <span class="w" style="--i:2"><span>transformam</span></span>
+            <span class="w" style="--i:3"><span><em>sentimentos</em></span></span>
+            <span class="w" style="--i:4"><span>em</span></span>
+            <span class="w" style="--i:5"><span>momentos</span></span>
+            <span class="w" style="--i:6"><span>inesquecíveis.</span></span>
+          </h1>
+
+          <p class="hero__lead">
+            Na Floricultura Jardins, cada flor é escolhida com carinho para transformar sentimentos em presentes especiais.
+          </p>
+
+          <div class="hero__note">
+            <span class="hero__note-icon" aria-hidden="true">
+              <svg class="ic"><use href="#i-gift"/></svg>
+            </span>
+            <p>Surpreenda quem sempre esteve ao seu lado com flores preparadas especialmente para esse momento.</p>
+          </div>
+
+          <div class="hero__actions">
+            <a class="btn btn--primary btn--lg" href="#produtos">
+              Ver flores
+              <svg class="ic" aria-hidden="true"><use href="#i-arrow-right"/></svg>
+            </a>
+            <a class="btn btn--ghost btn--lg" href="#contato">
+              Fazer encomenda
+              <svg class="ic" aria-hidden="true"><use href="#i-flower-2"/></svg>
+            </a>
+          </div>
+
+          <ul class="hero__trust" aria-label="Diferenciais">
+            <li><svg class="ic" aria-hidden="true"><use href="#i-leaf"/></svg> Flores frescas todos os dias</li>
+            <li><svg class="ic" aria-hidden="true"><use href="#i-truck"/></svg> Entrega com cuidado</li>
+            <li><svg class="ic ic--fill" aria-hidden="true"><use href="#i-star"/></svg> 4,9 de avaliação</li>
+          </ul>
+        </div>
+
+        <div class="hero__visual">
+          <svg class="hero__folha" aria-hidden="true"><use href="#folha"/></svg>
+          <figure class="hero__arch media">
+            <img src="https://unsplash.com/photos/yXep6PC-qfo/download?w=1400"
+                 alt="Buquê de flores cor-de-rosa e brancas sobre fundo rosa"
+                 width="1400" height="1750" fetchpriority="high">
+          </figure>
+
+          <div class="hero__card">
+            <div class="hero__card-media media">
+              <img src="https://unsplash.com/photos/CpU70USe3RM/download?w=500"
+                   alt="Buquê de rosas cor-de-rosa com tulipas brancas"
+                   width="500" height="500" loading="lazy">
+            </div>
+            <div>
+              <span class="hero__card-label">Mais pedido da semana</span>
+              <strong class="hero__card-title">Buquê Amor de Mãe</strong>
+              <span class="hero__card-price">R$ 129,90</span>
+            </div>
+          </div>
+
+          <div class="selo selo--hero" aria-hidden="true">
+            <svg class="selo__texto" viewBox="0 0 200 200">
+              <defs><path id="circulo-hero" d="M100,100 m-76,0 a76,76 0 1,1 152,0 a76,76 0 1,1 -152,0"/></defs>
+              <text><textPath href="#circulo-hero">FLORES FRESCAS ✿ FEITO COM CARINHO ✿</textPath></text>
+            </svg>
+            <svg class="selo__centro"><use href="#logo-tulipa"/></svg>
+          </div>
+        </div>
+      </div>
+
+      <a class="scroll-hint" href="#produtos" aria-label="Rolar para os produtos">
+        <span>Role para descobrir</span>
+        <span class="scroll-hint__line" aria-hidden="true"></span>
+      </a>
+    </section>
+
+    <!-- ========================= PRODUTOS ========================= -->
+    <section class="section produtos" id="produtos" aria-labelledby="produtos-titulo">
+      <div class="container">
+        <header class="sec-head sec-head--split">
+          <div data-reveal="up">
+            <span class="eyebrow">Nossos buquês</span>
+            <h2 class="sec-title" id="produtos-titulo">Flores para cada <em>momento</em></h2>
+          </div>
+          <p class="sec-sub" data-reveal="up" style="--d:.12s">
+            Escolha o presente perfeito para demonstrar aquilo que palavras nem sempre conseguem explicar.
+          </p>
+        </header>
+
+        <div class="produtos__grid" data-stagger>
+          <article class="produto">
+            <div class="produto__media media">
+              <img src="https://unsplash.com/photos/lwlbLowPcHE/download?w=800"
+                   alt="Buquê de rosas em tons delicados de bege e rosa"
+                   width="800" height="1000" loading="lazy">
+              <span class="produto__tag">Dia das Mães</span>
+              <button class="produto__fav" type="button" aria-pressed="false" aria-label="Favoritar Buquê Amor de Mãe">
+                <svg class="ic" aria-hidden="true"><use href="#i-heart"/></svg>
+              </button>
+            </div>
+            <div class="produto__body">
+              <h3 class="produto__nome">Buquê Amor de Mãe</h3>
+              <p class="produto__desc">Rosas em tons delicados com embalagem premium.</p>
+              <div class="produto__footer">
+                <span class="preco"><small>R$</small> 129,90</span>
+                <button class="btn btn--soft btn--sm" type="button" data-produto="amor-de-mae">
+                  Ver detalhes
+                  <svg class="ic" aria-hidden="true"><use href="#i-arrow-right"/></svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="produto">
+            <div class="produto__media media">
+              <img src="https://unsplash.com/photos/ZxSNWVS4HWE/download?w=800"
+                   alt="Tulipas coloridas arranjadas em um vaso de vidro"
+                   width="800" height="1000" loading="lazy">
+              <span class="produto__tag produto__tag--verde">Mais vendido</span>
+              <button class="produto__fav" type="button" aria-pressed="false" aria-label="Favoritar Jardim de Tulipas">
+                <svg class="ic" aria-hidden="true"><use href="#i-heart"/></svg>
+              </button>
+            </div>
+            <div class="produto__body">
+              <h3 class="produto__nome">Jardim de Tulipas</h3>
+              <p class="produto__desc">Arranjo elegante com tulipas coloridas.</p>
+              <div class="produto__footer">
+                <span class="preco"><small>R$</small> 149,90</span>
+                <button class="btn btn--soft btn--sm" type="button" data-produto="tulipas">
+                  Ver detalhes
+                  <svg class="ic" aria-hidden="true"><use href="#i-arrow-right"/></svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="produto">
+            <div class="produto__media media">
+              <img src="https://unsplash.com/photos/zrmCrWCbHPA/download?w=800"
+                   alt="Buquê de flores variadas embrulhado em papel kraft"
+                   width="800" height="1000" loading="lazy">
+              <span class="produto__tag produto__tag--creme">Assinatura da casa</span>
+              <button class="produto__fav" type="button" aria-pressed="false" aria-label="Favoritar Buquê Jardins">
+                <svg class="ic" aria-hidden="true"><use href="#i-heart"/></svg>
+              </button>
+            </div>
+            <div class="produto__body">
+              <h3 class="produto__nome">Buquê Jardins</h3>
+              <p class="produto__desc">Combinação de flores naturais selecionadas.</p>
+              <div class="produto__footer">
+                <span class="preco"><small>R$</small> 119,90</span>
+                <button class="btn btn--soft btn--sm" type="button" data-produto="jardins">
+                  Ver detalhes
+                  <svg class="ic" aria-hidden="true"><use href="#i-arrow-right"/></svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="produto">
+            <div class="produto__media media">
+              <img src="https://unsplash.com/photos/Yix2ME5y_d4/download?w=800"
+                   alt="Caixa de presente com flores frescas arranjadas dentro"
+                   width="800" height="1000" loading="lazy">
+              <span class="produto__tag">Presente completo</span>
+              <button class="produto__fav" type="button" aria-pressed="false" aria-label="Favoritar Box Flores e Carinho">
+                <svg class="ic" aria-hidden="true"><use href="#i-heart"/></svg>
+              </button>
+            </div>
+            <div class="produto__body">
+              <h3 class="produto__nome">Box Flores &amp; Carinho</h3>
+              <p class="produto__desc">Caixa especial com flores e chocolates.</p>
+              <div class="produto__footer">
+                <span class="preco"><small>R$</small> 169,90</span>
+                <button class="btn btn--soft btn--sm" type="button" data-produto="box">
+                  Ver detalhes
+                  <svg class="ic" aria-hidden="true"><use href="#i-arrow-right"/></svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="produto">
+            <div class="produto__media media">
+              <img src="https://unsplash.com/photos/qJy61YwqQB8/download?w=800"
+                   alt="Pessoa segurando um buquê clássico de rosas vermelhas"
+                   width="800" height="1000" loading="lazy">
+              <span class="produto__tag produto__tag--verde">Clássico</span>
+              <button class="produto__fav" type="button" aria-pressed="false" aria-label="Favoritar Rosas Encantadas">
+                <svg class="ic" aria-hidden="true"><use href="#i-heart"/></svg>
+              </button>
+            </div>
+            <div class="produto__body">
+              <h3 class="produto__nome">Rosas Encantadas</h3>
+              <p class="produto__desc">Buquê clássico de rosas vermelhas.</p>
+              <div class="produto__footer">
+                <span class="preco"><small>R$</small> 139,90</span>
+                <button class="btn btn--soft btn--sm" type="button" data-produto="rosas">
+                  Ver detalhes
+                  <svg class="ic" aria-hidden="true"><use href="#i-arrow-right"/></svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="produto">
+            <div class="produto__media media">
+              <img src="https://unsplash.com/photos/Grtj6vZttDA/download?w=800"
+                   alt="Peônias cor-de-rosa em um vaso sobre superfície rosa"
+                   width="800" height="1000" loading="lazy">
+              <span class="produto__tag">Novo</span>
+              <button class="produto__fav" type="button" aria-pressed="false" aria-label="Favoritar Encanto Rosa">
+                <svg class="ic" aria-hidden="true"><use href="#i-heart"/></svg>
+              </button>
+            </div>
+            <div class="produto__body">
+              <h3 class="produto__nome">Encanto Rosa</h3>
+              <p class="produto__desc">Arranjo floral em tons de rosa e branco.</p>
+              <div class="produto__footer">
+                <span class="preco"><small>R$</small> 159,90</span>
+                <button class="btn btn--soft btn--sm" type="button" data-produto="encanto">
+                  Ver detalhes
+                  <svg class="ic" aria-hidden="true"><use href="#i-arrow-right"/></svg>
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <p class="produtos__nota" data-reveal="fade">
+          <svg class="ic" aria-hidden="true"><use href="#i-pen-line"/></svg>
+          Todos os arranjos acompanham um cartão com a sua mensagem, escrito à mão pela nossa equipe.
+        </p>
+      </div>
+    </section>
+
+    <!-- ========================= DIA DAS MÃES ========================= -->
+    <section class="section maes" id="dia-das-maes" aria-labelledby="maes-titulo">
+      <svg class="maes__deco maes__deco--1" aria-hidden="true"><use href="#i-flower-2"/></svg>
+      <svg class="maes__deco maes__deco--2" aria-hidden="true"><use href="#i-flower"/></svg>
+
+      <div class="container maes__grid">
+        <div class="maes__colagem" data-reveal="left">
+          <figure class="colagem__principal media">
+            <img src="https://unsplash.com/photos/EQ1MR3mKg9w/download?w=1000"
+                 alt="Mulher sorrindo ao receber um buquê de rosas"
+                 width="1000" height="1250" loading="lazy">
+          </figure>
+
+          <figure class="colagem__flores media" data-parallax="-0.05">
+            <img src="https://unsplash.com/photos/2QbRkn2y0Vo/download?w=600"
+                 alt="Tulipas brancas sobre fundo rosa"
+                 width="600" height="600" loading="lazy">
+          </figure>
+
+          <figure class="colagem__presente media" data-parallax="0.06">
+            <img src="https://unsplash.com/photos/baLUAKBNsG4/download?w=600"
+                 alt="Caixa de presente branca com laço de fita e flores"
+                 width="600" height="600" loading="lazy">
+          </figure>
+
+          <div class="colagem__cartao" aria-label="Exemplo de cartão personalizado">
+            <span class="cartao__para">Para a melhor mãe do mundo,</span>
+            <p class="cartao__texto">obrigada por cada abraço, cada conselho e cada flor que você plantou em mim.</p>
+            <span class="cartao__assinatura">Com amor, Lu ♡</span>
+          </div>
+
+          <div class="selo selo--maes" aria-hidden="true">
+            <svg class="selo__texto" viewBox="0 0 200 200">
+              <defs><path id="circulo-maes" d="M100,100 m-76,0 a76,76 0 1,1 152,0 a76,76 0 1,1 -152,0"/></defs>
+              <text><textPath href="#circulo-maes">COLEÇÃO ESPECIAL ✿ DIA DAS MÃES ✿</textPath></text>
+            </svg>
+            <svg class="selo__centro selo__centro--icone"><use href="#i-heart"/></svg>
+          </div>
+        </div>
+
+        <div class="maes__content">
+          <span class="pill pill--branco" data-reveal="up">
+            <svg class="ic" aria-hidden="true"><use href="#i-sparkles"/></svg>
+            Coleção Especial Dia das Mães
+          </span>
+          <h2 class="sec-title" id="maes-titulo" data-reveal="up" style="--d:.08s">
+            Um presente para quem fez <em>florescer</em> o melhor em você.
+          </h2>
+          <p class="maes__texto" data-reveal="up" style="--d:.16s">
+            Neste Dia das Mães, transforme carinho em flores. Preparamos uma coleção especial de buquês e arranjos para tornar essa data ainda mais inesquecível.
+          </p>
+
+          <ul class="maes__lista" data-stagger>
+            <li>
+              <span class="maes__icone"><svg class="ic" aria-hidden="true"><use href="#i-calendar-heart"/></svg></span>
+              Encomendas antecipadas
+            </li>
+            <li>
+              <span class="maes__icone"><svg class="ic" aria-hidden="true"><use href="#i-flower-2"/></svg></span>
+              Arranjos exclusivos
+            </li>
+            <li>
+              <span class="maes__icone"><svg class="ic" aria-hidden="true"><use href="#i-gift"/></svg></span>
+              Embalagens especiais
+            </li>
+            <li>
+              <span class="maes__icone"><svg class="ic" aria-hidden="true"><use href="#i-pen-line"/></svg></span>
+              Cartões personalizados
+            </li>
+          </ul>
+
+          <div class="maes__acoes" data-reveal="up" style="--d:.2s">
+            <a class="btn btn--primary btn--lg" href="#produtos">
+              Conhecer coleção
+              <svg class="ic" aria-hidden="true"><use href="#i-arrow-right"/></svg>
+            </a>
+            <span class="maes__data">
+              <svg class="ic" aria-hidden="true"><use href="#i-calendar-heart"/></svg>
+              Comemorado no 2º domingo de maio
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================= SOBRE ========================= -->
+    <section class="section sobre" id="sobre" aria-labelledby="sobre-titulo">
+      <div class="container sobre__grid">
+        <div class="sobre__visual" data-reveal="left">
+          <figure class="sobre__foto media media--parallax">
+            <img src="https://unsplash.com/photos/3DyfEiITFz4/download?w=1000"
+                 alt="Florista preparando um arranjo de flores dentro da loja"
+                 width="1000" height="1250" loading="lazy" data-parallax-img="0.08">
+          </figure>
+          <figure class="sobre__detalhe media">
+            <img src="https://unsplash.com/photos/cb7N6IIC5QA/download?w=600"
+                 alt="Mãos amarrando um buquê com barbante e tesoura sobre a bancada"
+                 width="600" height="600" loading="lazy">
+          </figure>
+          <div class="sobre__selo">
+            <span class="sobre__selo-ano">2008</span>
+            <span class="sobre__selo-txt">cultivando afeto desde</span>
+          </div>
+        </div>
+
+        <div class="sobre__content">
+          <span class="eyebrow" data-reveal="up">Sobre nós</span>
+          <h2 class="sec-title" id="sobre-titulo" data-reveal="up" style="--d:.08s">Nossa <em>história</em></h2>
+          <div class="sobre__texto" data-stagger>
+            <p class="sobre__abertura">A Floricultura Jardins nasceu do amor pelas flores e pela capacidade que elas possuem de transmitir sentimentos.</p>
+            <p>Desde o início, nosso propósito sempre foi transformar momentos importantes em lembranças inesquecíveis.</p>
+            <p>Cada arranjo é preparado com atenção aos detalhes, flores selecionadas e muito carinho.</p>
+            <p>Ao longo dos anos, a Jardins se tornou um espaço onde pessoas encontram flores para comemorar aniversários, agradecer, pedir desculpas, celebrar conquistas e demonstrar amor.</p>
+          </div>
+          <p class="sobre__assinatura" data-reveal="fade">Com carinho, equipe Jardins</p>
+
+          <dl class="numeros" data-stagger>
+            <div class="numero">
+              <dt>anos de história</dt>
+              <dd><span data-count="18">18</span></dd>
+            </div>
+            <div class="numero">
+              <dt>arranjos entregues</dt>
+              <dd><span data-count="25">25</span> mil</dd>
+            </div>
+            <div class="numero">
+              <dt>nota dos clientes</dt>
+              <dd><span data-count="4.9" data-decimals="1">4,9</span></dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <div class="ornamento ornamento--creme" aria-hidden="true">
+      <svg class="ornamento__svg" viewBox="0 0 240 40" fill="none">
+        <path class="desenho" pathLength="1" d="M10 20H94"/>
+        <path class="desenho" pathLength="1" d="M146 20h84"/>
+        <path class="desenho" pathLength="1" d="M94 20c7-8 15-10 21-6"/>
+        <path class="desenho" pathLength="1" d="M94 20c7 6 13 8 19 6"/>
+        <path class="desenho" pathLength="1" d="M146 20c-7-8-15-10-21-6"/>
+        <path class="desenho" pathLength="1" d="M146 20c-7 6-13 8-19 6"/>
+        <circle class="ornamento__botao" cx="120" cy="20" r="3.4"/>
+        <circle class="ornamento__ponto" cx="5" cy="20" r="1.6"/>
+        <circle class="ornamento__ponto" cx="235" cy="20" r="1.6"/>
+      </svg>
+    </div>
+
+    <!-- ========================= PROPÓSITO ========================= -->
+    <section class="section proposito" id="valores" aria-labelledby="proposito-titulo">
+      <div class="container">
+        <header class="sec-head sec-head--center">
+          <span class="eyebrow" data-reveal="up">Nosso propósito</span>
+          <h2 class="sec-title" id="proposito-titulo" data-reveal="up" style="--d:.08s">O que nos move a cada <em>arranjo</em></h2>
+        </header>
+
+        <div class="proposito__grid" data-stagger>
+          <article class="proposito__card">
+            <svg class="proposito__marca" aria-hidden="true"><use href="#i-flower"/></svg>
+            <span class="proposito__icone"><svg class="ic" aria-hidden="true"><use href="#i-sprout"/></svg></span>
+            <h3>Missão</h3>
+            <p>Transformar sentimentos em experiências especiais por meio das flores.</p>
+          </article>
+          <article class="proposito__card proposito__card--destaque">
+            <svg class="proposito__marca" aria-hidden="true"><use href="#i-flower"/></svg>
+            <span class="proposito__icone"><svg class="ic" aria-hidden="true"><use href="#i-eye"/></svg></span>
+            <h3>Visão</h3>
+            <p>Ser reconhecida pela qualidade, criatividade e carinho presente em cada arranjo.</p>
+          </article>
+          <article class="proposito__card">
+            <svg class="proposito__marca" aria-hidden="true"><use href="#i-flower"/></svg>
+            <span class="proposito__icone"><svg class="ic" aria-hidden="true"><use href="#i-heart"/></svg></span>
+            <h3>Valores</h3>
+            <p>Qualidade, cuidado, respeito, criatividade, confiança e amor pelo que fazemos.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================= PRINCÍPIOS ========================= -->
+    <section class="principios" aria-labelledby="principios-titulo">
+      <svg class="onda onda--topo" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true"><path d="M0 0h1440v58C1080 6 360 6 0 58Z"/></svg>
+
+      <div class="container">
+        <header class="sec-head sec-head--center">
+          <span class="eyebrow eyebrow--claro" data-reveal="up">Nossos princípios</span>
+          <h2 class="sec-title sec-title--claro" id="principios-titulo" data-reveal="up" style="--d:.08s">O que cultivamos <em>todos os dias</em></h2>
+        </header>
+
+        <ul class="principios__lista" data-stagger>
+          <li class="principio">
+            <span class="principio__icone"><svg class="ic" aria-hidden="true"><use href="#i-flower-2"/></svg></span>
+            <h3>Qualidade</h3>
+            <p>Selecionamos cuidadosamente nossas flores e materiais.</p>
+          </li>
+          <li class="principio">
+            <span class="principio__icone"><svg class="ic" aria-hidden="true"><use href="#i-heart"/></svg></span>
+            <h3>Carinho</h3>
+            <p>Cada pedido é preparado como se fosse único.</p>
+          </li>
+          <li class="principio">
+            <span class="principio__icone"><svg class="ic" aria-hidden="true"><use href="#i-leaf"/></svg></span>
+            <h3>Respeito</h3>
+            <p>Valorizamos nossos clientes, parceiros e colaboradores.</p>
+          </li>
+          <li class="principio">
+            <span class="principio__icone"><svg class="ic" aria-hidden="true"><use href="#i-sparkles"/></svg></span>
+            <h3>Criatividade</h3>
+            <p>Criamos arranjos únicos para diferentes momentos.</p>
+          </li>
+          <li class="principio">
+            <span class="principio__icone"><svg class="ic" aria-hidden="true"><use href="#i-handshake"/></svg></span>
+            <h3>Confiança</h3>
+            <p>Buscamos construir relações duradouras com nossos clientes.</p>
+          </li>
+        </ul>
+      </div>
+
+      <svg class="onda onda--base" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true"><path d="M0 80h1440V22C1080 74 360 74 0 22Z"/></svg>
+    </section>
+
+    <!-- ========================= DIFERENCIAIS ========================= -->
+    <section class="section diferenciais" id="diferenciais" aria-labelledby="diferenciais-titulo">
+      <div class="container diferenciais__grid">
+        <div class="diferenciais__visual" data-reveal="left">
+          <figure class="diferenciais__foto media media--parallax">
+            <img src="https://unsplash.com/photos/Ir4w5n4GSqo/download?w=1000"
+                 alt="Florista de avental criando um arranjo de flores no ateliê"
+                 width="1000" height="1250" loading="lazy" data-parallax-img="0.08">
+          </figure>
+          <div class="diferenciais__selo">
+            <svg class="ic" aria-hidden="true"><use href="#i-truck"/></svg>
+            <div>
+              <strong>Entrega no mesmo dia</strong>
+              <span>para pedidos feitos até as 14h</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="diferenciais__content">
+          <span class="eyebrow" data-reveal="up">Por que escolher a Jardins?</span>
+          <h2 class="sec-title" id="diferenciais-titulo" data-reveal="up" style="--d:.08s">Mais do que <em>flores</em></h2>
+          <p class="sec-sub" data-reveal="up" style="--d:.16s">
+            Cuidamos de cada etapa, da escolha da flor até o momento em que o presente chega às mãos de quem você ama.
+          </p>
+
+          <div class="diferenciais__lista" data-stagger>
+            <article class="diferencial">
+              <span class="diferencial__icone"><svg class="ic" aria-hidden="true"><use href="#i-flower"/></svg></span>
+              <h3>Flores selecionadas</h3>
+              <p>Produtos frescos e cuidadosamente escolhidos.</p>
+            </article>
+            <article class="diferencial">
+              <span class="diferencial__icone"><svg class="ic" aria-hidden="true"><use href="#i-scissors"/></svg></span>
+              <h3>Arranjos personalizados</h3>
+              <p>Criamos opções de acordo com cada ocasião.</p>
+            </article>
+            <article class="diferencial">
+              <span class="diferencial__icone"><svg class="ic" aria-hidden="true"><use href="#i-truck"/></svg></span>
+              <h3>Entrega com cuidado</h3>
+              <p>Todo pedido preparado e transportado com atenção.</p>
+            </article>
+            <article class="diferencial">
+              <span class="diferencial__icone"><svg class="ic" aria-hidden="true"><use href="#i-headset"/></svg></span>
+              <h3>Atendimento especial</h3>
+              <p>Nossa equipe ajuda o cliente a escolher o presente ideal.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================= DEPOIMENTOS ========================= -->
+    <section class="section depoimentos" id="depoimentos" aria-labelledby="depoimentos-titulo">
+      <div class="container depoimentos__grid">
+        <div class="depoimentos__visual" data-reveal="zoom">
+          <figure class="depoimentos__foto media">
+            <img src="https://unsplash.com/photos/bkVIOmdyvwM/download?w=900"
+                 alt="Mulher sorrindo segurando um buquê de flores cor-de-rosa"
+                 width="900" height="1125" loading="lazy">
+          </figure>
+          <div class="depoimentos__nota">
+            <strong>4,9</strong>
+            <span class="estrelas" aria-hidden="true">
+              <svg class="ic ic--fill"><use href="#i-star"/></svg><svg class="ic ic--fill"><use href="#i-star"/></svg><svg class="ic ic--fill"><use href="#i-star"/></svg><svg class="ic ic--fill"><use href="#i-star"/></svg><svg class="ic ic--fill"><use href="#i-star"/></svg>
+            </span>
+            <span>média de mais de 1.200 avaliações</span>
+          </div>
+        </div>
+
+        <div class="depoimentos__content">
+          <span class="eyebrow" data-reveal="up">Depoimentos</span>
+          <h2 class="sec-title" id="depoimentos-titulo" data-reveal="up" style="--d:.08s">
+            Quem recebe, sente. <em>Quem presenteia, lembra.</em>
+          </h2>
+
+          <div class="carrossel" data-reveal="up" style="--d:.16s" aria-roledescription="carrossel" aria-label="Avaliações de clientes">
+            <div class="carrossel__janela">
+              <ul class="carrossel__trilho">
+                <li class="depo" aria-roledescription="slide" aria-label="1 de 3">
+                  <span class="estrelas" role="img" aria-label="5 de 5 estrelas">
+                    <svg class="ic ic--fill" aria-hidden="true"><use href="#i-star"/></svg><svg class="ic ic--fill" aria-hidden="true"><use href="#i-star"/></svg><svg class="ic ic--fill" aria-hidden="true"><use href="#i-star"/></svg><svg class="ic ic--fill" aria-hidden="true"><use href="#i-star"/></svg><svg class="ic ic--fill" aria-hidden="true"><use href="#i-star"/></svg>
+                  </span>
+                  <blockquote class="depo__texto">“Comprei um buquê para minha mãe e ficou ainda mais bonito do que eu imaginava.”</blockquote>
+                  <div class="depo__autor">
+                    <span class="depo__avatar" aria-hidden="true">MS</span>
+                    <div>
+                      <strong>Mariana Silva</strong>
+                      <span>Comprou o Buquê Amor de Mãe</span>
+                    </div>
+                  </div>
+                </li>
+                <li class="depo" aria-roledescription="slide" aria-label="2 de 3">
+                  <span class="estrelas" role="img" aria-label="5 de 5 estrelas">
+                    <svg class="ic ic--fill" aria-hidden="true"><use href="#i-star"/></svg><svg class="ic ic--fill" aria-hidden="true"><use href="#i-star"/></svg><svg class="ic ic--fill" aria-hidden="true"><use href="#i-star"/></svg><svg class="ic ic--fill" aria-hidden="true"><use href="#i-star"/></svg><svg class="ic ic--fill" aria-hidden="true"><use href="#i-star"/></svg>
+                  </span>
+                  <blockquote class="depo__texto">“Atendimento excelente e flores maravilhosas.”</blockquote>
+                  <div class="depo__autor">
+                    <span class="depo__avatar depo__avatar--verde" aria-hidden="true">CO</span>
+                    <div>
+                      <strong>Camila Oliveira</strong>
+                      <span>Comprou o Jardim de Tulipas</span>
+                    </div>
+                  </div>
+                </li>
+                <li class="depo" aria-roledescription="slide" aria-label="3 de 3">
+                  <span class="estrelas" role="img" aria-label="5 de 5 estrelas">
+                    <svg class="ic ic--fill" aria-hidden="true"><use href="#i-star"/></svg><svg class="ic ic--fill" aria-hidden="true"><use href="#i-star"/></svg><svg class="ic ic--fill" aria-hidden="true"><use href="#i-star"/></svg><svg class="ic ic--fill" aria-hidden="true"><use href="#i-star"/></svg><svg class="ic ic--fill" aria-hidden="true"><use href="#i-star"/></svg>
+                  </span>
+                  <blockquote class="depo__texto">“O arranjo chegou perfeito e muito bem embalado.”</blockquote>
+                  <div class="depo__autor">
+                    <span class="depo__avatar depo__avatar--creme" aria-hidden="true">RS</span>
+                    <div>
+                      <strong>Rafael Souza</strong>
+                      <span>Comprou o Box Flores &amp; Carinho</span>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="carrossel__controles">
+              <button class="carrossel__seta" type="button" data-dir="-1" aria-label="Avaliação anterior">
+                <svg class="ic" aria-hidden="true"><use href="#i-chevron-left"/></svg>
+              </button>
+              <div class="carrossel__pontos" role="group" aria-label="Escolher avaliação"></div>
+              <button class="carrossel__seta" type="button" data-dir="1" aria-label="Próxima avaliação">
+                <svg class="ic" aria-hidden="true"><use href="#i-chevron-right"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================= GALERIA ========================= -->
+    <section class="section galeria" id="galeria" aria-labelledby="galeria-titulo">
+      <div class="container">
+        <header class="sec-head sec-head--split">
+          <div data-reveal="up">
+            <span class="eyebrow">Galeria</span>
+            <h2 class="sec-title" id="galeria-titulo">Um pouco do nosso <em>jardim</em></h2>
+          </div>
+          <p class="sec-sub" data-reveal="up" style="--d:.12s">
+            Bastidores, detalhes e criações que saem do nosso ateliê todos os dias.
+          </p>
+        </header>
+
+        <div class="galeria__grid" data-stagger>
+          <button class="galeria__item galeria__item--a media" type="button" data-legenda="Buquês">
+            <img src="https://unsplash.com/photos/G4n3JPUNQgg/download?w=800" alt="Buquê de rosas cor-de-rosa e vermelhas" width="800" height="1100" loading="lazy">
+            <span class="galeria__legenda">Buquês <svg class="ic" aria-hidden="true"><use href="#i-zoom"/></svg></span>
+          </button>
+          <button class="galeria__item galeria__item--b media" type="button" data-legenda="Rosas">
+            <img src="https://unsplash.com/photos/XAzSSjwcwN4/download?w=700" alt="Pétalas de rosas cor-de-rosa vistas de perto" width="700" height="600" loading="lazy">
+            <span class="galeria__legenda">Rosas <svg class="ic" aria-hidden="true"><use href="#i-zoom"/></svg></span>
+          </button>
+          <button class="galeria__item galeria__item--c media" type="button" data-legenda="Flores sendo preparadas">
+            <img src="https://unsplash.com/photos/kDeW2wMjiY8/download?w=1100" alt="Mãos arranjando hortênsias cor-de-rosa e galhos verdes" width="1100" height="1100" loading="lazy">
+            <span class="galeria__legenda">Flores sendo preparadas <svg class="ic" aria-hidden="true"><use href="#i-zoom"/></svg></span>
+          </button>
+          <button class="galeria__item galeria__item--d media" type="button" data-legenda="Detalhes dos arranjos">
+            <img src="https://unsplash.com/photos/jjj1rHyYyG0/download?w=700" alt="Rosas cor-de-rosa e brancas em detalhe" width="700" height="600" loading="lazy">
+            <span class="galeria__legenda">Detalhes dos arranjos <svg class="ic" aria-hidden="true"><use href="#i-zoom"/></svg></span>
+          </button>
+          <button class="galeria__item galeria__item--e media" type="button" data-legenda="Embalagens">
+            <img src="https://unsplash.com/photos/vr8kXY3KWM8/download?w=800" alt="Buquê de tulipas embrulhado em papel kraft" width="800" height="1100" loading="lazy">
+            <span class="galeria__legenda">Embalagens <svg class="ic" aria-hidden="true"><use href="#i-zoom"/></svg></span>
+          </button>
+          <button class="galeria__item galeria__item--f media" type="button" data-legenda="Nossa loja">
+            <img src="https://unsplash.com/photos/1yqxcV0ONvE/download?w=1100" alt="Flores coloridas organizadas em baldes na loja" width="1100" height="600" loading="lazy">
+            <span class="galeria__legenda">Nossa loja <svg class="ic" aria-hidden="true"><use href="#i-zoom"/></svg></span>
+          </button>
+          <button class="galeria__item galeria__item--g media" type="button" data-legenda="Tulipas">
+            <img src="https://unsplash.com/photos/43m51FRyG88/download?w=800" alt="Tulipas cor-de-rosa, brancas e vermelhas" width="800" height="1100" loading="lazy">
+            <span class="galeria__legenda">Tulipas <svg class="ic" aria-hidden="true"><use href="#i-zoom"/></svg></span>
+          </button>
+          <button class="galeria__item galeria__item--h media" type="button" data-legenda="Arranjos para casa">
+            <img src="https://unsplash.com/photos/l-6cbjLd2N4/download?w=1100" alt="Tulipas coloridas em vaso de vidro na janela" width="1100" height="600" loading="lazy">
+            <span class="galeria__legenda">Arranjos para casa <svg class="ic" aria-hidden="true"><use href="#i-zoom"/></svg></span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <div class="ornamento ornamento--branco" aria-hidden="true">
+      <svg class="ornamento__svg" viewBox="0 0 240 40" fill="none">
+        <path class="desenho" pathLength="1" d="M10 20H94"/>
+        <path class="desenho" pathLength="1" d="M146 20h84"/>
+        <path class="desenho" pathLength="1" d="M94 20c7-8 15-10 21-6"/>
+        <path class="desenho" pathLength="1" d="M94 20c7 6 13 8 19 6"/>
+        <path class="desenho" pathLength="1" d="M146 20c-7-8-15-10-21-6"/>
+        <path class="desenho" pathLength="1" d="M146 20c-7 6-13 8-19 6"/>
+        <circle class="ornamento__botao" cx="120" cy="20" r="3.4"/>
+        <circle class="ornamento__ponto" cx="5" cy="20" r="1.6"/>
+        <circle class="ornamento__ponto" cx="235" cy="20" r="1.6"/>
+      </svg>
+    </div>
+
+    <!-- ========================= LOJA ========================= -->
+    <section class="section loja" id="loja" aria-labelledby="loja-titulo">
+      <div class="container loja__grid">
+        <div class="loja__info" data-reveal="up">
+          <span class="eyebrow">Nossa loja</span>
+          <h2 class="sec-title" id="loja-titulo">Venha conhecer nosso <em>jardim</em></h2>
+          <p class="loja__intro">Um espaço pensado para você escolher com calma, sentir o perfume das flores e montar o seu presente junto com a nossa equipe.</p>
+
+          <div class="loja__bloco">
+            <span class="loja__icone"><svg class="ic" aria-hidden="true"><use href="#i-map-pin"/></svg></span>
+            <div>
+              <h3>Endereço</h3>
+              <address>Rua das Flores, 125<br>Centro — São Paulo/SP</address>
+            </div>
+          </div>
+
+          <div class="loja__bloco">
+            <span class="loja__icone"><svg class="ic" aria-hidden="true"><use href="#i-clock"/></svg></span>
+            <div class="loja__horarios">
+              <h3>Horário <span class="status-loja" id="status-loja" hidden></span></h3>
+              <dl>
+                <div data-dias="1,2,3,4,5"><dt>Segunda a sexta</dt><dd>08h às 18h</dd></div>
+                <div data-dias="6"><dt>Sábado</dt><dd>08h às 16h</dd></div>
+                <div data-dias="0"><dt>Domingo</dt><dd>09h às 13h</dd></div>
+              </dl>
+            </div>
+          </div>
+
+          <a class="btn btn--primary" href="https://www.google.com/maps/dir/?api=1&amp;destination=Rua+das+Flores,+125,+Centro,+S%C3%A3o+Paulo+-+SP" target="_blank" rel="noopener">
+            Como chegar
+            <svg class="ic" aria-hidden="true"><use href="#i-navigation"/></svg>
+          </a>
+        </div>
+
+        <!-- Espaço do mapa: troque o endereço no "src" pelo da loja real -->
+        <div class="loja__mapa" data-reveal="up" style="--d:.1s">
+          <div class="mapa__reserva" aria-hidden="true">
+            <svg class="ic"><use href="#i-map-pin"/></svg>
+            <span>Rua das Flores, 125 · Centro</span>
+          </div>
+          <iframe
+            title="Mapa com a localização da Floricultura Jardins"
+            src="https://maps.google.com/maps?q=Rua%20das%20Flores%2C%20125%20-%20Centro%2C%20S%C3%A3o%20Paulo%20-%20SP&amp;z=15&amp;output=embed"
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <figure class="loja__fachada media" data-reveal="right">
+          <img src="https://unsplash.com/photos/Izb_LX0E5yw/download?w=1000"
+               alt="Fachada charmosa da floricultura com plantas e guirlandas na entrada"
+               width="1000" height="1300" loading="lazy">
+          <figcaption class="loja__legenda">
+            <svg class="logo__mark" aria-hidden="true"><use href="#logo-tulipa"/></svg>
+            Te esperamos com um café e muitas flores
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ========================= CONTATO ========================= -->
+    <section class="section contato" id="contato" aria-labelledby="contato-titulo">
+      <div class="container contato__grid">
+        <div class="contato__info">
+          <span class="eyebrow" data-reveal="up">Contato</span>
+          <h2 class="sec-title" id="contato-titulo" data-reveal="up" style="--d:.08s">Fale com a <em>Jardins</em></h2>
+          <p class="sec-sub" data-reveal="up" style="--d:.16s">Conte para nós a ocasião e quem vai receber. A gente ajuda você a escolher o arranjo ideal.</p>
+
+          <div class="contato__cards" data-stagger>
+            <article class="contato-card contato-card--whats">
+              <span class="contato-card__icone"><svg class="ic" aria-hidden="true"><use href="#b-whatsapp"/></svg></span>
+              <div class="contato-card__txt">
+                <h3>WhatsApp</h3>
+                <p>(11) 99999-9999</p>
+              </div>
+              <a class="btn btn--light btn--sm" href="https://wa.me/5511999999999?text=Ol%C3%A1%2C%20Jardins!%20Gostaria%20de%20fazer%20um%20pedido." target="_blank" rel="noopener">
+                Chamar no WhatsApp
+                <svg class="ic" aria-hidden="true"><use href="#i-arrow-right"/></svg>
+              </a>
+            </article>
+            <article class="contato-card">
+              <span class="contato-card__icone"><svg class="ic" aria-hidden="true"><use href="#i-phone"/></svg></span>
+              <div class="contato-card__txt">
+                <h3>Telefone</h3>
+                <p><a href="tel:+551133333333">(11) 3333-3333</a></p>
+              </div>
+            </article>
+            <article class="contato-card">
+              <span class="contato-card__icone"><svg class="ic" aria-hidden="true"><use href="#i-mail"/></svg></span>
+              <div class="contato-card__txt">
+                <h3>E-mail</h3>
+                <p><a href="mailto:contato@floriculturajardins.com.br">contato@<wbr>floriculturajardins.com.br</a></p>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <form class="form" id="form-contato" novalidate data-reveal="right">
+          <div class="form__campos">
+            <h3 class="form__titulo">Envie uma mensagem</h3>
+            <div class="campo">
+              <label for="nome">Nome</label>
+              <input id="nome" name="nome" type="text" autocomplete="name" placeholder="Como podemos te chamar?" required>
+              <span class="campo__erro" aria-live="polite"></span>
+            </div>
+            <div class="form__linha">
+              <div class="campo">
+                <label for="telefone">Telefone</label>
+                <input id="telefone" name="telefone" type="tel" autocomplete="tel" inputmode="tel" placeholder="(11) 99999-9999" required>
+                <span class="campo__erro" aria-live="polite"></span>
+              </div>
+              <div class="campo">
+                <label for="email">E-mail</label>
+                <input id="email" name="email" type="email" autocomplete="email" placeholder="voce@email.com" required>
+                <span class="campo__erro" aria-live="polite"></span>
+              </div>
+            </div>
+            <div class="campo">
+              <label for="mensagem">Mensagem</label>
+              <textarea id="mensagem" name="mensagem" rows="5" placeholder="Conte a ocasião, a data de entrega e o estilo de flores que você imagina." required></textarea>
+              <span class="campo__erro" aria-live="polite"></span>
+            </div>
+            <button class="btn btn--primary btn--lg btn--block" type="submit">
+              <span class="btn__txt">Enviar mensagem</span>
+              <svg class="ic" aria-hidden="true"><use href="#i-send"/></svg>
+            </button>
+          </div>
+
+          <div class="form__sucesso" hidden>
+            <span class="form__sucesso-icone"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg></span>
+            <h3>Mensagem enviada com carinho!</h3>
+            <p><span id="sucesso-nome">Obrigado</span>! Recebemos sua mensagem e nossa equipe vai responder em breve pelo telefone ou e-mail informado.</p>
+            <button class="btn btn--ghost btn--sm" type="button" id="nova-mensagem">Enviar outra mensagem</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- ========================= REDES SOCIAIS ========================= -->
+    <section class="section redes" id="redes" aria-labelledby="redes-titulo">
+      <div class="container">
+        <header class="sec-head sec-head--center">
+          <span class="eyebrow" data-reveal="up">Redes sociais</span>
+          <h2 class="sec-title" id="redes-titulo" data-reveal="up" style="--d:.08s">Acompanhe nosso <em>jardim</em></h2>
+          <a class="redes__handle" href="https://www.instagram.com/floriculturajardins" target="_blank" rel="noopener" data-reveal="up" style="--d:.16s">@floriculturajardins</a>
+        </header>
+
+        <ul class="redes__icones" data-stagger>
+          <li><a class="rede" href="https://www.instagram.com/floriculturajardins" target="_blank" rel="noopener" aria-label="Instagram"><svg class="ic" aria-hidden="true"><use href="#b-instagram"/></svg></a></li>
+          <li><a class="rede" href="https://www.facebook.com/floriculturajardins" target="_blank" rel="noopener" aria-label="Facebook"><svg class="ic" aria-hidden="true"><use href="#b-facebook"/></svg></a></li>
+          <li><a class="rede" href="https://www.tiktok.com/@floriculturajardins" target="_blank" rel="noopener" aria-label="TikTok"><svg class="ic" aria-hidden="true"><use href="#b-tiktok"/></svg></a></li>
+          <li><a class="rede" href="https://wa.me/5511999999999" target="_blank" rel="noopener" aria-label="WhatsApp"><svg class="ic" aria-hidden="true"><use href="#b-whatsapp"/></svg></a></li>
+        </ul>
+
+        <div class="insta" data-stagger>
+          <a class="insta__post media" href="https://www.instagram.com/floriculturajardins" target="_blank" rel="noopener">
+            <img src="https://unsplash.com/photos/yXsYTnm0KtI/download?w=480" alt="Publicação: rosas cor-de-rosa" width="480" height="480" loading="lazy">
+            <span class="insta__overlay"><svg class="ic ic--fill" aria-hidden="true"><use href="#i-heart"/></svg> 1.248</span>
+          </a>
+          <a class="insta__post media" href="https://www.instagram.com/floriculturajardins" target="_blank" rel="noopener">
+            <img src="https://unsplash.com/photos/9ZLQ2rrl-Hc/download?w=480" alt="Publicação: buquê de tulipas coloridas" width="480" height="480" loading="lazy">
+            <span class="insta__overlay"><svg class="ic ic--fill" aria-hidden="true"><use href="#i-heart"/></svg> 986</span>
+          </a>
+          <a class="insta__post media" href="https://www.instagram.com/floriculturajardins" target="_blank" rel="noopener">
+            <img src="https://unsplash.com/photos/DTpKjgHpHj4/download?w=480" alt="Publicação: rosas cor-de-rosa sobre fundo branco" width="480" height="480" loading="lazy">
+            <span class="insta__overlay"><svg class="ic ic--fill" aria-hidden="true"><use href="#i-heart"/></svg> 2.031</span>
+          </a>
+          <a class="insta__post media" href="https://www.instagram.com/floriculturajardins" target="_blank" rel="noopener">
+            <img src="https://unsplash.com/photos/pKg5gTRjVLk/download?w=480" alt="Publicação: buquê de gérberas cor-de-rosa com eucalipto" width="480" height="480" loading="lazy">
+            <span class="insta__overlay"><svg class="ic ic--fill" aria-hidden="true"><use href="#i-heart"/></svg> 754</span>
+          </a>
+          <a class="insta__post media" href="https://www.instagram.com/floriculturajardins" target="_blank" rel="noopener">
+            <img src="https://unsplash.com/photos/tiqUZG67ygQ/download?w=480" alt="Publicação: rosa cor-de-rosa em detalhe" width="480" height="480" loading="lazy">
+            <span class="insta__overlay"><svg class="ic ic--fill" aria-hidden="true"><use href="#i-heart"/></svg> 1.517</span>
+          </a>
+          <a class="insta__post media" href="https://www.instagram.com/floriculturajardins" target="_blank" rel="noopener">
+            <img src="https://unsplash.com/photos/7nvmTdvHaKk/download?w=480" alt="Publicação: buquê de tulipas coral e cor-de-rosa" width="480" height="480" loading="lazy">
+            <span class="insta__overlay"><svg class="ic ic--fill" aria-hidden="true"><use href="#i-heart"/></svg> 1.102</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================= CTA FINAL ========================= -->
+    <section class="cta" aria-labelledby="cta-titulo">
+      <div class="container">
+        <div class="cta__caixa media" data-reveal="zoom">
+          <img class="cta__fundo" src="https://unsplash.com/photos/2c1ZIxAEXNM/download?w=1800"
+               alt="" width="1800" height="1200" loading="lazy" data-parallax-img="0.1">
+          <div class="cta__conteudo">
+            <svg class="cta__marca" aria-hidden="true"><use href="#logo-tulipa"/></svg>
+            <h2 class="cta__titulo" id="cta-titulo">Há sentimentos que flores <em>dizem melhor.</em></h2>
+            <p>Escolha um arranjo especial e transforme o dia de alguém que você ama.</p>
+            <div class="cta__acoes">
+              <a class="btn btn--light btn--lg" href="#produtos">
+                Escolher flores
+                <svg class="ic" aria-hidden="true"><use href="#i-flower-2"/></svg>
+              </a>
+              <a class="btn btn--outline-light btn--lg" href="#contato">
+                Fazer pedido
+                <svg class="ic" aria-hidden="true"><use href="#i-arrow-right"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================= FOOTER ========================= -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__marca">
+          <a class="logo logo--claro" href="#inicio">
+            <svg class="logo__mark" aria-hidden="true"><use href="#logo-tulipa"/></svg>
+            <span class="logo__text">
+              <span class="logo__name">Jardins</span>
+              <span class="logo__tag">Floricultura</span>
+            </span>
+          </a>
+          <p class="footer__frase">Transformando sentimentos em flores.</p>
+        </div>
+
+        <nav class="footer__col" aria-label="Navegação do rodapé">
+          <h3>Navegação</h3>
+          <ul>
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#produtos">Produtos</a></li>
+            <li><a href="#sobre">Sobre Nós</a></li>
+            <li><a href="#dia-das-maes">Dia das Mães</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer__col">
+          <h3>Atendimento</h3>
+          <ul>
+            <li><a href="https://wa.me/5511999999999" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true"><use href="#b-whatsapp"/></svg> WhatsApp</a></li>
+            <li><a href="tel:+551133333333"><svg class="ic" aria-hidden="true"><use href="#i-phone"/></svg> Telefone</a></li>
+            <li><a href="mailto:contato@floriculturajardins.com.br"><svg class="ic" aria-hidden="true"><use href="#i-mail"/></svg> E-mail</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h3>Redes sociais</h3>
+          <ul>
+            <li><a href="https://www.instagram.com/floriculturajardins" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true"><use href="#b-instagram"/></svg> Instagram</a></li>
+            <li><a href="https://www.facebook.com/floriculturajardins" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true"><use href="#b-facebook"/></svg> Facebook</a></li>
+            <li><a href="https://www.tiktok.com/@floriculturajardins" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true"><use href="#b-tiktok"/></svg> TikTok</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__base">
+        <p>© 2026 Floricultura Jardins. Todos os direitos reservados.</p>
+        <p>Projeto desenvolvido para atividade acadêmica.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Botão flutuante do WhatsApp -->
+  <a class="whats-flutuante" href="https://wa.me/5511999999999?text=Ol%C3%A1%2C%20Jardins!%20Gostaria%20de%20fazer%20um%20pedido." target="_blank" rel="noopener" aria-label="Conversar pelo WhatsApp">
+    <svg class="ic" aria-hidden="true"><use href="#b-whatsapp"/></svg>
+  </a>
+
+  <!-- Modal de detalhes do produto -->
+  <dialog class="modal" id="modal-produto" aria-labelledby="modal-nome">
+    <div class="modal__caixa">
+      <button class="modal__fechar" type="button" data-fechar aria-label="Fechar detalhes">
+        <svg class="ic" aria-hidden="true"><use href="#i-x"/></svg>
+      </button>
+      <div class="modal__media media">
+        <img id="modal-img" src="" alt="" width="800" height="1000">
+      </div>
+      <div class="modal__corpo">
+        <span class="produto__tag modal__tag" id="modal-tag"></span>
+        <h3 class="modal__nome" id="modal-nome"></h3>
+        <span class="preco preco--lg" id="modal-preco"></span>
+        <p class="modal__desc" id="modal-desc"></p>
+        <h4 class="modal__subtitulo">O que acompanha</h4>
+        <ul class="modal__itens" id="modal-itens"></ul>
+        <div class="modal__acoes">
+          <a class="btn btn--primary" id="modal-whats" href="https://wa.me/5511999999999" target="_blank" rel="noopener">
+            Encomendar pelo WhatsApp
+            <svg class="ic" aria-hidden="true"><use href="#b-whatsapp"/></svg>
+          </a>
+          <button class="btn btn--ghost" type="button" data-fechar>Continuar escolhendo</button>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- Lightbox da galeria -->
+  <dialog class="lightbox" id="lightbox" aria-label="Imagem ampliada da galeria">
+    <button class="lightbox__fechar" type="button" data-fechar aria-label="Fechar imagem">
+      <svg class="ic" aria-hidden="true"><use href="#i-x"/></svg>
+    </button>
+    <button class="lightbox__seta lightbox__seta--ant" type="button" data-dir="-1" aria-label="Imagem anterior">
+      <svg class="ic" aria-hidden="true"><use href="#i-chevron-left"/></svg>
+    </button>
+    <figure class="lightbox__figura">
+      <img id="lightbox-img" src="" alt="">
+      <figcaption id="lightbox-legenda"></figcaption>
+    </figure>
+    <button class="lightbox__seta lightbox__seta--prox" type="button" data-dir="1" aria-label="Próxima imagem">
+      <svg class="ic" aria-hidden="true"><use href="#i-chevron-right"/></svg>
+    </button>
+  </dialog>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
