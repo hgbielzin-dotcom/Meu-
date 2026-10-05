@@ -1,0 +1,183 @@
+1
+00:00:00,900 --> 00:00:02,980
+Oi, gente! Tudo bem?
+
+2
+00:00:03,130 --> 00:00:08,163
+A Floricultura Jardins tem 30 dias para se preparar para o Dia das Mães.
+
+3
+00:00:08,313 --> 00:00:12,635
+Bora ver os cronogramas, a logística e a montagem do stand?
+
+4
+00:00:13,936 --> 00:00:16,471
+O plano é dividido em três frentes.
+
+5
+00:00:16,621 --> 00:00:19,144
+Do dia 1 ao 10, compras e estoque.
+
+6
+00:00:19,294 --> 00:00:22,586
+Do dia 11 ao 20, ponto de vendas e stand.
+
+7
+00:00:22,736 --> 00:00:26,092
+E as encomendas vão do dia 11 até o dia 30.
+
+8
+00:00:27,392 --> 00:00:30,844
+Começando pelas compras, nos dez primeiros dias.
+
+9
+00:00:30,994 --> 00:00:36,305
+Primeiro, a gente pesquisa os fornecedores: R$ 500 e 2 pessoas.
+
+10
+00:00:36,455 --> 00:00:40,488
+Depois vêm as flores, com R$ 5.000 e 3 pessoas.
+
+11
+00:00:40,638 --> 00:00:45,195
+Embalagens custam R$ 1.500, e presentes, R$ 2.000.
+
+12
+00:00:45,345 --> 00:00:50,569
+No total, são R$ 9.000, com os 3 funcionários fixos se revezando.
+
+13
+00:00:50,719 --> 00:00:56,985
+Ah, e um detalhe: as flores chegam só na semana do Dia das Mães, pra ficarem fresquinhas.
+
+14
+00:00:58,285 --> 00:01:02,112
+Agora, o ponto de vendas, do dia 11 ao dia 20.
+
+15
+00:01:02,262 --> 00:01:04,713
+Ele inclui o nosso stand na feira.
+
+16
+00:01:04,863 --> 00:01:11,623
+São R$ 1.500 em organização e decoração, R$ 800 em divulgação e R$ 500 no estoque.
+
+17
+00:01:11,773 --> 00:01:14,722
+Tudo isso dá R$ 2.800.
+
+18
+00:01:14,872 --> 00:01:19,784
+E a equipe cresce: 3 funcionários fixos e mais 4 temporários.
+
+19
+00:01:21,084 --> 00:01:23,918
+E como funciona a logística do stand?
+
+20
+00:01:24,068 --> 00:01:29,533
+As flores saem da loja bem cedinho, num utilitário fechado, em baldes com água.
+
+21
+00:01:29,683 --> 00:01:34,746
+Todo dia tem reposição de flores frescas, com sombra e água no stand.
+
+22
+00:01:34,896 --> 00:01:39,971
+A estrutura tem balcão, prateleiras, painel com o logotipo e iluminação.
+
+23
+00:01:40,121 --> 00:01:47,679
+No atendimento, ficam 2 temporários por turno e 1 fixo responsável, aceitando cartão, Pix e QR Code.
+
+24
+00:01:48,979 --> 00:01:52,256
+Agora, a montagem do stand, passo a passo.
+
+25
+00:01:52,406 --> 00:01:56,454
+No dia 11, a gente reserva o espaço e desenha a planta.
+
+26
+00:01:56,604 --> 00:02:00,877
+Do dia 12 ao 14, cuidamos da estrutura e da decoração.
+
+27
+00:02:01,027 --> 00:02:04,548
+Nos dias 15 e 16, é hora da divulgação.
+
+28
+00:02:04,698 --> 00:02:08,481
+Nos dias 17 e 18, montamos tudo no local.
+
+29
+00:02:08,631 --> 00:02:13,256
+No dia 19, abastecemos o estoque e testamos os pagamentos.
+
+30
+00:02:13,407 --> 00:02:18,069
+E no dia 20, o stand abre as portas, com a equipe completa!
+
+31
+00:02:19,369 --> 00:02:21,426
+Bora falar das encomendas.
+
+32
+00:02:21,576 --> 00:02:25,710
+Os pedidos podem ser feitos do dia 11 ao dia 27.
+
+33
+00:02:25,860 --> 00:02:30,669
+E, do dia 21 ao 27, a equipe monta os pedidos com calma.
+
+34
+00:02:30,819 --> 00:02:40,063
+As retiradas são no dia 28, para os pedidos antecipados, no dia 29, para os regulares, e no dia 30, para os finais.
+
+35
+00:02:40,213 --> 00:02:43,358
+Quatro funcionários cuidam só das encomendas.
+
+36
+00:02:44,658 --> 00:02:48,093
+Juntando tudo, olha como fica o cronograma geral.
+
+37
+00:02:48,243 --> 00:02:51,950
+Primeiro as compras, depois o ponto de vendas e o stand.
+
+38
+00:02:52,100 --> 00:02:57,356
+As encomendas correm em paralelo, e a preparação dos pedidos vem logo depois.
+
+39
+00:02:57,506 --> 00:03:01,471
+No fim, os três dias de retiradas e atendimento intensivo.
+
+40
+00:03:01,621 --> 00:03:04,895
+E no dia 30, a preparação está encerrada.
+
+41
+00:03:06,195 --> 00:03:08,063
+E quanto custa tudo isso?
+
+42
+00:03:08,213 --> 00:03:11,881
+O orçamento total é de R$ 11.800.
+
+43
+00:03:12,031 --> 00:03:17,438
+São R$ 9.000 em compras e R$ 2.800 no ponto de vendas e no stand.
+
+44
+00:03:17,588 --> 00:03:24,484
+A equipe tem 3 funcionários fixos e 4 temporários, chegando a 7 pessoas no pico do movimento.
+
+45
+00:03:25,784 --> 00:03:30,215
+Com tudo planejado, a Jardins está prontinha para o Dia das Mães.
+
+46
+00:03:30,365 --> 00:03:33,016
+Valeu, gente, e até a próxima!

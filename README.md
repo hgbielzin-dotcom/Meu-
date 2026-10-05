@@ -32,17 +32,19 @@ assets/fonts/       → Playfair Display e Montserrat (licença OFL), funcionam 
 
 ## Vídeo do plano de Dia das Mães
 
-A pasta `video/` tem o vídeo de apresentação dos cronogramas, da logística e da montagem do stand (2min15s, Full HD, sem áudio):
+A pasta `video/` tem o vídeo de apresentação dos cronogramas, da logística e da montagem do stand (3:34, Full HD), narrado em português com legendas na tela:
 
 ```
-video/apresentacao.html → as 10 cenas animadas (abra no navegador para ver em loop)
-video/gravar.js         → grava as cenas em MP4, quadro a quadro
-video/roteiro.md        → texto sugerido para narrar cada cena, com os tempos
+video/apresentacao.html → as 10 cenas animadas e as legendas (abra no navegador para ver em loop)
+video/narracao.py       → texto da narração; gera a voz, os tempos (narracao.js) e as legendas (legendas.srt)
+video/gravar.js         → grava as cenas quadro a quadro e junta a narração no MP4
+video/roteiro.md        → falas com o tempo de cada uma
 ```
 
-Para gerar o MP4 de novo (precisa de Node, Playwright e ffmpeg):
+Para gerar o MP4 de novo (precisa de Python, Node, Playwright, ffmpeg e do RHVoice com a voz `Leticia-F123`):
 
 ```bash
+python3 video/narracao.py
 npx http-server -p 8080 .
 node video/gravar.js
 ```
