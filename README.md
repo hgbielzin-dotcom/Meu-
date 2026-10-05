@@ -30,6 +30,23 @@ assets/img/         → logotipo (logo-jardins), emblema de flores e fotos do bu
 assets/fonts/       → Playfair Display e Montserrat (licença OFL), funcionam offline
 ```
 
+## Vídeo do plano de Dia das Mães
+
+A pasta `video/` tem o vídeo de apresentação dos cronogramas, da logística e da montagem do stand (2min15s, Full HD, sem áudio):
+
+```
+video/apresentacao.html → as 10 cenas animadas (abra no navegador para ver em loop)
+video/gravar.js         → grava as cenas em MP4, quadro a quadro
+video/roteiro.md        → texto sugerido para narrar cada cena, com os tempos
+```
+
+Para gerar o MP4 de novo (precisa de Node, Playwright e ffmpeg):
+
+```bash
+npx http-server -p 8080 .
+node video/gravar.js
+```
+
 ## Seções
 
 Início → Coleções → Produtos → Dia das Mães → Nossa história → Missão, visão e valores → Princípios → Diferenciais → Depoimentos → Galeria → Loja → Contato → Redes sociais → Chamada final → Rodapé.

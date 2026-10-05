@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Plano Dia das Mães · Vídeo</title>
+<style>
+@font-face { font-family: "Playfair Display"; font-weight: 400; font-style: normal; src: url("../assets/fonts/playfair-display-latin-400-normal.woff2") format("woff2"); }
+@font-face { font-family: "Playfair Display"; font-weight: 400; font-style: italic; src: url("../assets/fonts/playfair-display-latin-400-italic.woff2") format("woff2"); }
+@font-face { font-family: "Playfair Display"; font-weight: 500; font-style: normal; src: url("../assets/fonts/playfair-display-latin-500-normal.woff2") format("woff2"); }
+@font-face { font-family: "Montserrat"; font-weight: 400; src: url("../assets/fonts/montserrat-latin-400-normal.woff2") format("woff2"); }
+@font-face { font-family: "Montserrat"; font-weight: 500; src: url("../assets/fonts/montserrat-latin-500-normal.woff2") format("woff2"); }
+@font-face { font-family: "Montserrat"; font-weight: 600; src: url("../assets/fonts/montserrat-latin-600-normal.woff2") format("woff2"); }
+
+/* Quadro 1920×1080: cenas em creme, títulos em Playfair, dados em Montserrat.
+   As marcas dos gráficos usam um verde e um rosa mais saturados (validados para daltonismo). */
+:root {
+  --rosa: #E8A6B5;
+  --rosa-claro: #F8DDE4;
+  --rosa-suave: #FCEEF1;
+  --rosa-texto: #B9677D;
+  --rosa-profundo: #9A4E63;
+  --salvia: #8FA98C;
+  --salvia-claro: #E6EEE4;
+  --verde: #435B46;
+  --creme: #FFF8F2;
+  --branco: #FFFFFF;
+  --texto: #2F3630;
+  --texto-suave: #5E675F;
+  --texto-mudo: #7C847D;
+  --linha: rgba(67, 91, 70, .14);
+  --grade: rgba(67, 91, 70, .12);
+  --g-verde: #13784A;
+  --g-rosa: #D06582;
+  --f-titulo: "Playfair Display", Georgia, serif;
+  --f-texto: "Montserrat", "Segoe UI", system-ui, sans-serif;
+  --sombra: 0 40px 80px -48px rgba(47, 54, 48, .45);
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; background: #1F2421; }
+body { overflow: hidden; }
+#palco {
+  position: relative;
+  width: 1920px;
+  height: 1080px;
+  overflow: hidden;
+  background: radial-gradient(circle at 92% 0%, rgba(248, 221, 228, .75), transparent 38%), var(--creme);
+  font-family: var(--f-texto);
+  color: var(--texto);
+  font-variant-numeric: lining-nums;
+  transform-origin: top left;
+}
+.cena { position: absolute; inset: 0; opacity: 0; visibility: hidden; }
+img { display: block; }
+.ic { fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+
+/* topo comum */
+.topo {
+  position: absolute; left: 120px; right: 120px; top: 40px;
+  display: flex; align-items: center; justify-content: space-between;
+}
+.topo img { height: 96px; width: auto; }
+.etapa {
+  font-size: 21px; font-weight: 600; letter-spacing: .22em; text-transform: uppercase; color: var(--verde);
+  display: flex; align-items: center; gap: 16px;
+}
+.etapa::before { content: ""; width: 40px; height: 1.5px; background: currentColor; opacity: .5; }
+
+.chip {
+  display: inline-flex; align-items: center; gap: 12px; align-self: flex-start;
+  padding: 12px 24px; border-radius: 999px;
+  background: var(--rosa-claro); color: var(--rosa-profundo);
+  font-size: 23px; font-weight: 600; letter-spacing: .02em;
+}
+.chip svg { width: 26px; height: 26px; }
+.titulo {
+  margin: 22px 0 0;
+  font-family: var(--f-titulo); font-weight: 400; font-size: 80px; line-height: 1.08; letter-spacing: -.015em;
+}
+.titulo em { font-style: italic; color: var(--rosa-texto); }
+.sub { margin: 18px 0 0; font-size: 29px; line-height: 1.5; color: var(--texto-suave); }
+.foto { position: absolute; overflow: hidden; border-radius: 40px; box-shadow: var(--sombra); background: #F3C6A9; }
+.foto img { width: 100%; height: 100%; object-fit: cover; }
+.gx { transform-origin: left center; }
+.gy { transform-origin: center top; }
+
+/* ---------- 1. Abertura ---------- */
+.s1-esq { position: absolute; left: 150px; top: 120px; width: 900px; display: flex; flex-direction: column; }
+.s1-logo { height: 270px; width: auto; align-self: flex-start; margin-bottom: 34px; }
+.s1-esq .titulo { font-size: 96px; }
+.s1-foto { right: 150px; top: 100px; width: 640px; height: 880px; border-radius: 320px 320px 40px 40px; }
+
+/* ---------- 2. Três frentes ---------- */
+.s2-titulo { position: absolute; left: 120px; top: 170px; }
+.s2-cards { position: absolute; left: 120px; right: 120px; top: 390px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 48px; }
+.card { background: var(--branco); border-radius: 32px; overflow: hidden; box-shadow: var(--sombra); border: 1px solid var(--linha); }
+.card .foto-card { height: 270px; overflow: hidden; background: #F3C6A9; }
+.card .foto-card img { width: 100%; height: 100%; object-fit: cover; }
+.card .corpo { padding: 32px 36px 38px; }
+.dias { font-size: 21px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--rosa-profundo); }
+.card h3 { margin: 12px 0 10px; font-family: var(--f-titulo); font-weight: 500; font-size: 44px; line-height: 1.1; }
+.card p { margin: 0; font-size: 25px; line-height: 1.5; color: var(--texto-suave); }
+
+/* ---------- 3. Compras ---------- */
+.esq { position: absolute; left: 120px; top: 160px; display: flex; flex-direction: column; }
+.foto-dir { right: 120px; top: 160px; width: 440px; height: 840px; }
+.tabela { position: absolute; left: 120px; top: 385px; width: 1110px; }
+.linha-t {
+  display: grid; grid-template-columns: 430px 290px 210px 180px; align-items: center;
+  height: 84px; border-bottom: 1px solid var(--linha); font-size: 30px;
+}
+.linha-t.cab { height: 56px; font-size: 19px; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; color: var(--texto-mudo); }
+.linha-t .valor, .linha-t .eq { text-align: right; font-variant-numeric: tabular-nums lining-nums; }
+.linha-t .valor { font-weight: 500; }
+.linha-t.total { border-bottom: 0; height: 92px; font-weight: 600; }
+.linha-t.total .valor { font-size: 38px; color: var(--texto); }
+.periodo { display: flex; flex-direction: column; gap: 10px; font-size: 22px; color: var(--texto-suave); }
+.trilho { position: relative; width: 240px; height: 12px; border-radius: 6px; background: var(--salvia-claro); }
+.trilho i { position: absolute; top: 0; bottom: 0; border-radius: 4px; background: var(--g-verde); }
+.nota {
+  position: absolute; left: 120px; top: 905px; width: 1110px;
+  display: flex; align-items: center; gap: 18px; padding: 20px 26px;
+  border-radius: 20px; background: var(--branco); border: 1px solid var(--linha);
+  font-size: 24px; line-height: 1.4; color: var(--texto-suave);
+}
+.nota svg { width: 36px; height: 36px; flex-shrink: 0; color: var(--g-verde); }
+.nota strong { color: var(--texto); font-weight: 600; }
+
+/* ---------- 4. Ponto de vendas ---------- */
+.barras { position: absolute; left: 120px; top: 480px; width: 1110px; display: grid; gap: 30px; }
+.barra { display: grid; grid-template-columns: 400px 1fr; align-items: center; font-size: 29px; }
+.barra .faixa { display: flex; align-items: center; gap: 18px; }
+.barra .faixa i { display: block; height: 24px; border-radius: 0 4px 4px 0; background: var(--g-verde); }
+.barra .faixa span { font-weight: 600; font-variant-numeric: tabular-nums lining-nums; white-space: nowrap; }
+.total-pv { position: absolute; left: 120px; top: 720px; font-size: 30px; color: var(--texto-suave); }
+.total-pv strong { color: var(--texto); font-size: 46px; font-weight: 600; margin-left: 12px; }
+.equipe { position: absolute; left: 120px; top: 830px; display: flex; align-items: center; gap: 22px; }
+.pessoa { width: 66px; height: 66px; border-radius: 50%; display: grid; place-items: center; color: var(--branco); }
+.pessoa svg { width: 34px; height: 34px; fill: currentColor; }
+.pessoa.fixo { background: var(--g-verde); }
+.pessoa.temp { background: var(--g-rosa); }
+.legenda-eq { display: flex; flex-direction: column; gap: 6px; margin-left: 20px; font-size: 25px; color: var(--texto-suave); }
+.legenda-eq span { display: flex; align-items: center; gap: 12px; }
+.legenda-eq b { width: 16px; height: 16px; border-radius: 50%; display: inline-block; }
+
+/* ---------- 5. Logística ---------- */
+.grade4 { position: absolute; left: 120px; top: 390px; width: 1200px; display: grid; grid-template-columns: 1fr 1fr; gap: 32px; }
+.bloco {
+  display: grid; grid-template-columns: 76px 1fr; column-gap: 26px; align-items: start;
+  background: var(--branco); border: 1px solid var(--linha); border-radius: 28px; padding: 34px 36px;
+  box-shadow: 0 30px 60px -48px rgba(47, 54, 48, .45);
+}
+.bloco .icone { width: 76px; height: 76px; border-radius: 22px; display: grid; place-items: center; background: var(--salvia-claro); color: var(--verde); grid-row: span 2; }
+.bloco .icone svg { width: 38px; height: 38px; }
+.bloco h3 { margin: 2px 0 8px; font-family: var(--f-titulo); font-weight: 500; font-size: 38px; }
+.bloco p { margin: 0; font-size: 25px; line-height: 1.5; color: var(--texto-suave); }
+.foto-dir-2 { right: 120px; top: 160px; width: 400px; height: 840px; }
+
+/* ---------- 6. Montagem ---------- */
+.s6-esq { position: absolute; left: 120px; top: 160px; width: 560px; display: flex; flex-direction: column; }
+.s6-esq .titulo { font-size: 76px; }
+.s6-foto { left: 120px; top: 640px; width: 560px; height: 360px; }
+.linha-tempo { position: absolute; left: 780px; right: 120px; top: 160px; height: 860px; }
+.linha-tempo .eixo { position: absolute; left: 94px; top: 24px; height: 700px; width: 2px; background: var(--salvia); }
+.passo { position: absolute; left: 0; right: 0; display: grid; grid-template-columns: 190px 1fr auto; align-items: start; column-gap: 34px; }
+.passo .dia {
+  justify-self: center; padding: 10px 0; width: 190px; text-align: center; border-radius: 999px;
+  background: var(--verde); color: var(--creme); font-size: 22px; font-weight: 600; letter-spacing: .02em;
+  box-shadow: 0 0 0 8px var(--creme);
+}
+.passo.final .dia { background: var(--g-rosa); }
+.passo h3 { margin: 2px 0 6px; font-family: var(--f-titulo); font-weight: 500; font-size: 36px; line-height: 1.15; }
+.passo p { margin: 0; font-size: 23px; line-height: 1.45; color: var(--texto-suave); max-width: 640px; }
+.passo .custo {
+  align-self: center; padding: 10px 18px; border-radius: 14px; background: var(--branco); border: 1px solid var(--linha);
+  font-size: 24px; font-weight: 600; white-space: nowrap; font-variant-numeric: tabular-nums lining-nums;
+}
+
+/* ---------- 7. Encomendas ---------- */
+.faixa-dias { position: absolute; left: 120px; top: 470px; width: 1680px; display: grid; grid-template-columns: repeat(30, 1fr); gap: 4px; }
+.faixa-dias div {
+  height: 64px; border-radius: 10px; display: grid; place-items: center;
+  font-size: 22px; font-weight: 600; background: var(--salvia-claro); color: var(--texto-mudo);
+}
+.faixa-dias .rec { background: var(--g-verde); color: var(--branco); }
+.faixa-dias .ret { background: var(--g-rosa); color: var(--branco); }
+.marca-faixa { position: absolute; top: 552px; height: 64px; border-top: 2px solid var(--texto-mudo); font-size: 23px; color: var(--texto-suave); padding-top: 14px; }
+.marca-faixa::before, .marca-faixa::after { content: ""; position: absolute; top: -9px; width: 2px; height: 16px; background: var(--texto-mudo); }
+.marca-faixa::before { left: 0; }
+.marca-faixa::after { right: 0; }
+.marca-faixa b { color: var(--texto); font-weight: 600; }
+.prep { position: absolute; top: 640px; height: 0; }
+.ret-cards { position: absolute; left: 120px; right: 120px; top: 730px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 36px; }
+.ret-card { background: var(--branco); border: 1px solid var(--linha); border-radius: 26px; padding: 30px 32px; }
+.ret-card .dia-g { font-size: 22px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--rosa-profundo); display: flex; align-items: center; gap: 12px; }
+.ret-card .dia-g b { width: 16px; height: 16px; border-radius: 4px; background: var(--g-rosa); }
+.ret-card h3 { margin: 12px 0 0; font-family: var(--f-titulo); font-weight: 500; font-size: 36px; line-height: 1.15; }
+.ret-card.equipe-c { background: var(--verde); border-color: var(--verde); color: var(--creme); }
+.ret-card.equipe-c .dia-g { color: var(--rosa-claro); }
+.ret-card.equipe-c h3 { color: var(--creme); }
+.ret-card.equipe-c svg { width: 30px; height: 30px; }
+
+/* ---------- 8. Gantt ---------- */
+.gantt { position: absolute; left: 120px; right: 120px; top: 380px; height: 600px; }
+.gantt .tick { position: absolute; top: 0; bottom: 40px; width: 1px; background: var(--grade); }
+.gantt .tick span { position: absolute; top: -40px; left: 50%; transform: translateX(-50%); font-size: 21px; color: var(--texto-mudo); white-space: nowrap; font-variant-numeric: tabular-nums lining-nums; }
+.gantt .rot { position: absolute; left: 0; width: 520px; font-size: 27px; font-weight: 500; line-height: 1.25; transform: translateY(-50%); }
+.gantt .bar { position: absolute; height: 24px; border-radius: 4px; background: var(--g-verde); transform: translateY(-50%); transform-origin: left center; }
+.gantt .bar-rot { position: absolute; font-size: 22px; color: var(--texto-suave); transform: translateY(-50%); white-space: nowrap; font-variant-numeric: tabular-nums lining-nums; }
+.gantt .fim { position: absolute; top: -10px; bottom: 40px; width: 2px; background: var(--g-rosa); }
+.gantt .fim span { position: absolute; bottom: -40px; right: -2px; font-size: 22px; font-weight: 600; color: var(--texto); white-space: nowrap; }
+
+/* ---------- 9. Orçamento ---------- */
+.s9-hero { position: absolute; left: 120px; top: 180px; }
+.s9-hero .rot { font-size: 23px; font-weight: 600; letter-spacing: .18em; text-transform: uppercase; color: var(--texto-mudo); }
+.s9-hero .num { font-size: 150px; font-weight: 600; line-height: 1.05; letter-spacing: -.02em; font-variant-numeric: tabular-nums lining-nums; margin-top: 8px; }
+.empilhada { position: absolute; left: 120px; right: 120px; top: 470px; height: 24px; display: flex; gap: 2px; }
+.empilhada i { display: block; height: 24px; }
+.empilhada .a { width: calc((100% - 2px) * 9000 / 11800); background: var(--g-verde); border-radius: 4px 0 0 4px; }
+.empilhada .b { width: calc((100% - 2px) * 2800 / 11800); background: var(--g-rosa); border-radius: 0 4px 4px 0; }
+.leg-orc { position: absolute; top: 520px; display: flex; flex-direction: column; gap: 6px; font-size: 26px; color: var(--texto-suave); }
+.leg-orc span:first-child { display: flex; align-items: center; gap: 12px; color: var(--texto); font-weight: 500; }
+.leg-orc b { width: 18px; height: 18px; border-radius: 4px; }
+.leg-orc strong { color: var(--texto); font-weight: 600; font-size: 34px; font-variant-numeric: tabular-nums lining-nums; }
+.obs { position: absolute; left: 120px; top: 690px; font-size: 25px; color: var(--texto-suave); }
+.tiles { position: absolute; left: 120px; right: 120px; top: 770px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 36px; }
+.tile { background: var(--branco); border: 1px solid var(--linha); border-radius: 26px; padding: 26px 34px; display: flex; align-items: baseline; gap: 22px; }
+.tile .n { font-size: 84px; font-weight: 600; line-height: 1; font-variant-numeric: tabular-nums lining-nums; }
+.tile .t { font-size: 27px; line-height: 1.35; color: var(--texto-suave); }
+
+/* ---------- 10. Encerramento ---------- */
+.s10 { position: absolute; left: 0; right: 0; top: 70px; display: flex; flex-direction: column; align-items: center; text-align: center; }
+.s10 img.logo { height: 290px; width: auto; }
+.s10 .titulo { font-size: 84px; margin-top: 18px; }
+.s10 .sub { margin-top: 12px; }
+.s10-fotos { position: absolute; left: 50%; top: 690px; transform: translateX(-50%); display: flex; gap: 36px; }
+.s10-fotos .ft { width: 300px; height: 300px; border-radius: 30px; overflow: hidden; box-shadow: var(--sombra); background: #F3C6A9; }
+.s10-fotos img { width: 100%; height: 100%; object-fit: cover; }
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-cal" viewBox="0 0 24 24"><path d="M8 2v3"/><path d="M16 2v3"/><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="m9 15 2 2 4-4"/></symbol>
+  <symbol id="i-truck" viewBox="0 0 24 24"><path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"/><path d="M15 18H9"/><path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14"/><circle cx="17" cy="18" r="2"/><circle cx="7" cy="18" r="2"/></symbol>
+  <symbol id="i-gotas" viewBox="0 0 24 24"><path d="M7 16.3c2.2 0 4-1.83 4-4.05 0-1.16-.57-2.26-1.71-3.19S7.29 6.75 7 5.3c-.29 1.45-1.14 2.84-2.29 3.76S3 11.1 3 12.25c0 2.22 1.8 4.05 4 4.05z"/><path d="M12.56 6.6A10.97 10.97 0 0 0 14 3.02c.5 2.5 2 4.9 4 6.5s3 3.5 3 5.5a6.98 6.98 0 0 1-11.91 4.97"/></symbol>
+  <symbol id="i-loja" viewBox="0 0 24 24"><path d="M15 21v-5a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v5"/><path d="M17.774 10.31a1.12 1.12 0 0 0-1.549 0 2.5 2.5 0 0 1-3.451 0 1.12 1.12 0 0 0-1.548 0 2.5 2.5 0 0 1-3.452 0 1.12 1.12 0 0 0-1.549 0 2.5 2.5 0 0 1-3.77-3.248l2.889-4.184A2 2 0 0 1 7 2h10a2 2 0 0 1 1.653.873l2.895 4.192a2.5 2.5 0 0 1-3.774 3.244"/><path d="M4 10.95V19a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8.05"/></symbol>
+  <symbol id="i-equipe" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><path d="M16 3.128a4 4 0 0 1 0 7.744"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><circle cx="9" cy="7" r="4"/></symbol>
+  <symbol id="i-pessoa" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4.2"/><path d="M3.5 21.5a8.5 8.5 0 0 1 17 0z"/></symbol>
+</svg>
+
+<div id="palco">
+
+  <!-- 1. Abertura -->
+  <section class="cena" data-dur="7.5">
+    <div class="s1-esq">
+      <img class="s1-logo" data-a="zoom" data-t="0.2" data-d="1.4" src="../assets/img/logo-jardins.webp" alt="">
+      <span class="chip" data-a="up" data-t="1.0"><svg class="ic"><use href="#i-cal"/></svg>30 dias de preparação</span>
+      <h1 class="titulo" data-a="up" data-t="1.25" data-d="1.1">Preparação para o <em>Dia das Mães</em></h1>
+      <p class="sub" data-a="up" data-t="1.7">Cronogramas, logística e montagem do stand.</p>
+    </div>
+    <div class="foto s1-foto" data-a="right" data-t="0.3" data-d="1.5"><img data-kb src="../assets/img/buque.jpg" alt=""></div>
+  </section>
+
+  <!-- 2. Três frentes -->
+  <section class="cena" data-dur="10">
+    <div class="topo"><img src="../assets/img/logo-jardins.webp" alt=""><span class="etapa">O plano</span></div>
+    <div class="s2-titulo">
+      <h2 class="titulo" data-a="up" data-t="0.4">Três frentes em <em>30 dias</em></h2>
+    </div>
+    <div class="s2-cards">
+      <article class="card" data-a="up" data-t="1.1">
+        <div class="foto-card"><img data-kb src="../assets/img/cesta-presente.jpg" alt="" style="object-position: 50% 45%"></div>
+        <div class="corpo"><span class="dias">Dias 1 a 10</span><h3>Compras e estoque</h3><p>Fornecedores, flores, embalagens e presentes.</p></div>
+      </article>
+      <article class="card" data-a="up" data-t="1.6">
+        <div class="foto-card"><img data-kb src="../assets/img/planta.jpg" alt="" style="object-position: 50% 30%"></div>
+        <div class="corpo"><span class="dias">Dias 11 a 20</span><h3>Ponto de vendas e stand</h3><p>Montagem do stand na feira e reforço da equipe.</p></div>
+      </article>
+      <article class="card" data-a="up" data-t="2.1">
+        <div class="foto-card"><img data-kb src="../assets/img/box-flores.jpg" alt="" style="object-position: 50% 40%"></div>
+        <div class="corpo"><span class="dias">Dias 11 a 30</span><h3>Encomendas</h3><p>Pedidos até o dia 27 e retiradas de 28 a 30.</p></div>
+      </article>
+    </div>
+  </section>
+
+  <!-- 3. Compras -->
+  <section class="cena" data-dur="17">
+    <div class="topo"><img src="../assets/img/logo-jardins.webp" alt=""><span class="etapa">Cronograma 1 · Compras</span></div>
+    <div class="esq">
+      <span class="chip" data-a="up" data-t="0.3"><svg class="ic"><use href="#i-cal"/></svg>Dias 1 a 10 · Sprint 1</span>
+      <h2 class="titulo" data-a="up" data-t="0.6">Cronograma de <em>compras</em></h2>
+    </div>
+    <div class="tabela">
+      <div class="linha-t cab" data-a="fade" data-t="1.2"><span>Atividade</span><span>Período</span><span class="valor">Orçamento</span><span class="eq">Equipe</span></div>
+      <div class="linha-t" data-a="up" data-t="1.6">
+        <span>Pesquisa de fornecedores</span>
+        <span class="periodo">Dias 1 a 3<span class="trilho"><i class="gx" data-a="grow-x" data-t="2.0" style="left:0%;width:30%"></i></span></span>
+        <span class="valor">R$ 500</span><span class="eq">2 pessoas</span>
+      </div>
+      <div class="linha-t" data-a="up" data-t="2.3">
+        <span>Compra de flores</span>
+        <span class="periodo">Dias 4 a 8<span class="trilho"><i class="gx" data-a="grow-x" data-t="2.7" style="left:30%;width:50%"></i></span></span>
+        <span class="valor">R$ 5.000</span><span class="eq">3 pessoas</span>
+      </div>
+      <div class="linha-t" data-a="up" data-t="3.0">
+        <span>Embalagens</span>
+        <span class="periodo">Dias 4 a 6<span class="trilho"><i class="gx" data-a="grow-x" data-t="3.4" style="left:30%;width:30%"></i></span></span>
+        <span class="valor">R$ 1.500</span><span class="eq">2 pessoas</span>
+      </div>
+      <div class="linha-t" data-a="up" data-t="3.7">
+        <span>Presentes</span>
+        <span class="periodo">Dias 7 a 10<span class="trilho"><i class="gx" data-a="grow-x" data-t="4.1" style="left:60%;width:40%"></i></span></span>
+        <span class="valor">R$ 2.000</span><span class="eq">2 pessoas</span>
+      </div>
+      <div class="linha-t total" data-a="up" data-t="4.6">
+        <span>Total</span>
+        <span class="periodo">3 fixos se revezam</span>
+        <span class="valor">R$ <span data-count="9000" data-ct="4.8" data-cd="1.6">9.000</span></span><span class="eq"></span>
+      </div>
+    </div>
+    <div class="nota" data-a="up" data-t="6.2">
+      <svg class="ic"><use href="#i-gotas"/></svg>
+      <span><strong>Flores frescas:</strong> o pedido é fechado nos dias 4 a 8, com entrega programada para a semana do Dia das Mães.</span>
+    </div>
+    <div class="foto foto-dir" data-a="right" data-t="0.5" data-d="1.4"><img data-kb src="../assets/img/cesta-presente.jpg" alt=""></div>
+  </section>
+
+  <!-- 4. Ponto de vendas -->
+  <section class="cena" data-dur="15">
+    <div class="topo"><img src="../assets/img/logo-jardins.webp" alt=""><span class="etapa">Cronograma 2 · Ponto de vendas</span></div>
+    <div class="esq">
+      <span class="chip" data-a="up" data-t="0.3"><svg class="ic"><use href="#i-cal"/></svg>Dias 11 a 20 · Sprint 2</span>
+      <h2 class="titulo" data-a="up" data-t="0.6">Abertura do <em>ponto de vendas</em></h2>
+      <p class="sub" data-a="up" data-t="1.0">Inclui a montagem do stand da Jardins na feira.</p>
+    </div>
+    <div class="barras">
+      <div class="barra" data-a="fade" data-t="1.6"><span>Organização e decoração</span><span class="faixa"><i class="gx" data-a="grow-x" data-t="1.8" data-d="1.2" style="width:600px"></i><span>R$ 1.500</span></span></div>
+      <div class="barra" data-a="fade" data-t="2.2"><span>Divulgação</span><span class="faixa"><i class="gx" data-a="grow-x" data-t="2.4" data-d="1.2" style="width:320px"></i><span>R$ 800</span></span></div>
+      <div class="barra" data-a="fade" data-t="2.8"><span>Organização do estoque</span><span class="faixa"><i class="gx" data-a="grow-x" data-t="3.0" data-d="1.2" style="width:200px"></i><span>R$ 500</span></span></div>
+    </div>
+    <div class="total-pv" data-a="up" data-t="4.0">Total <strong>R$ <span data-count="2800" data-ct="4.2" data-cd="1.4">2.800</span></strong></div>
+    <div class="equipe">
+      <span class="pessoa fixo" data-a="zoom" data-t="5.6"><svg><use href="#i-pessoa"/></svg></span>
+      <span class="pessoa fixo" data-a="zoom" data-t="5.75"><svg><use href="#i-pessoa"/></svg></span>
+      <span class="pessoa fixo" data-a="zoom" data-t="5.9"><svg><use href="#i-pessoa"/></svg></span>
+      <span class="pessoa temp" data-a="zoom" data-t="6.2"><svg><use href="#i-pessoa"/></svg></span>
+      <span class="pessoa temp" data-a="zoom" data-t="6.35"><svg><use href="#i-pessoa"/></svg></span>
+      <span class="pessoa temp" data-a="zoom" data-t="6.5"><svg><use href="#i-pessoa"/></svg></span>
+      <span class="pessoa temp" data-a="zoom" data-t="6.65"><svg><use href="#i-pessoa"/></svg></span>
+      <span class="legenda-eq" data-a="fade" data-t="7.0">
+        <span><b style="background:var(--g-verde)"></b>3 funcionários fixos</span>
+        <span><b style="background:var(--g-rosa)"></b>4 funcionários temporários</span>
+      </span>
+    </div>
+    <div class="foto foto-dir" data-a="right" data-t="0.5" data-d="1.4"><img data-kb src="../assets/img/box-flores.jpg" alt=""></div>
+  </section>
+
+  <!-- 5. Logística do stand -->
+  <section class="cena" data-dur="17">
+    <div class="topo"><img src="../assets/img/logo-jardins.webp" alt=""><span class="etapa">Stand na feira · Logística</span></div>
+    <div class="esq">
+      <span class="chip" data-a="up" data-t="0.3"><svg class="ic"><use href="#i-loja"/></svg>Stand na feira</span>
+      <h2 class="titulo" data-a="up" data-t="0.6">Logística do <em>stand</em></h2>
+    </div>
+    <div class="grade4">
+      <div class="bloco" data-a="up" data-t="1.4">
+        <span class="icone"><svg class="ic"><use href="#i-truck"/></svg></span>
+        <h3>Transporte</h3>
+        <p>Utilitário fechado saindo da loja bem cedo, antes do calor, com as flores em baldes com água.</p>
+      </div>
+      <div class="bloco" data-a="up" data-t="2.4">
+        <span class="icone"><svg class="ic"><use href="#i-gotas"/></svg></span>
+        <h3>Conservação</h3>
+        <p>Reposição diária de flores frescas vindas da loja, com sombra e água no stand.</p>
+      </div>
+      <div class="bloco" data-a="up" data-t="3.4">
+        <span class="icone"><svg class="ic"><use href="#i-loja"/></svg></span>
+        <h3>Estrutura</h3>
+        <p>Balcão, prateleiras, painel com o logotipo, iluminação e preços visíveis.</p>
+      </div>
+      <div class="bloco" data-a="up" data-t="4.4">
+        <span class="icone"><svg class="ic"><use href="#i-equipe"/></svg></span>
+        <h3>Atendimento</h3>
+        <p>2 temporários por turno e 1 fixo responsável. Cartão, Pix e QR Code do site.</p>
+      </div>
+    </div>
+    <div class="foto foto-dir-2" data-a="right" data-t="0.5" data-d="1.4"><img data-kb src="../assets/img/planta.jpg" alt=""></div>
+  </section>
+
+  <!-- 6. Montagem do stand -->
+  <section class="cena" data-dur="19">
+    <div class="topo"><img src="../assets/img/logo-jardins.webp" alt=""><span class="etapa">Stand na feira · Montagem</span></div>
+    <div class="s6-esq">
+      <span class="chip" data-a="up" data-t="0.3"><svg class="ic"><use href="#i-cal"/></svg>Dias 11 a 20</span>
+      <h2 class="titulo" data-a="up" data-t="0.6">Montagem do <em>stand</em></h2>
+      <p class="sub" data-a="up" data-t="1.0">Do espaço reservado à abertura, em 10 dias.</p>
+    </div>
+    <div class="foto s6-foto" data-a="up" data-t="1.3" data-d="1.2"><img data-kb src="../assets/img/buque-faixa.jpg" alt=""></div>
+    <div class="linha-tempo">
+      <span class="eixo gy" data-a="grow-y" data-t="1.0" data-d="8.5"></span>
+      <div class="passo" style="top:0px" data-a="left" data-t="1.4">
+        <span class="dia">Dia 11</span>
+        <div><h3>Reserva do espaço</h3><p>Confirmar o local na feira, medir a área e desenhar a planta do stand.</p></div>
+      </div>
+      <div class="passo" style="top:140px" data-a="left" data-t="2.9">
+        <span class="dia">Dias 12 a 14</span>
+        <div><h3>Estrutura e decoração</h3><p>Balcão, prateleiras, painel com o logotipo e iluminação.</p></div>
+        <span class="custo">R$ 1.500</span>
+      </div>
+      <div class="passo" style="top:280px" data-a="left" data-t="4.4">
+        <span class="dia">Dias 15 e 16</span>
+        <div><h3>Divulgação</h3><p>Banner, cartões, redes sociais e o site da Jardins.</p></div>
+        <span class="custo">R$ 800</span>
+      </div>
+      <div class="passo" style="top:420px" data-a="left" data-t="5.9">
+        <span class="dia">Dias 17 e 18</span>
+        <div><h3>Montagem no local</h3><p>Instalar a estrutura, a vitrine, a sinalização e a iluminação.</p></div>
+      </div>
+      <div class="passo" style="top:560px" data-a="left" data-t="7.4">
+        <span class="dia">Dia 19</span>
+        <div><h3>Estoque e testes</h3><p>Abastecer o stand e testar cartão, Pix e caixa.</p></div>
+        <span class="custo">R$ 500</span>
+      </div>
+      <div class="passo final" style="top:700px" data-a="left" data-t="8.9">
+        <span class="dia">Dia 20</span>
+        <div><h3>Abertura do stand</h3><p>Equipe completa: 3 funcionários fixos e 4 temporários.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. Encomendas -->
+  <section class="cena" data-dur="16">
+    <div class="topo"><img src="../assets/img/logo-jardins.webp" alt=""><span class="etapa">Cronograma 3 · Encomendas</span></div>
+    <div class="esq">
+      <span class="chip" data-a="up" data-t="0.3"><svg class="ic"><use href="#i-cal"/></svg>Dias 11 a 30</span>
+      <h2 class="titulo" data-a="up" data-t="0.6">Pedidos por <em>encomenda</em></h2>
+    </div>
+    <div class="faixa-dias" id="faixa-dias"></div>
+    <div class="marca-faixa" data-a="fade" data-t="3.4" style="left:calc(120px + 1680px * 10 / 30); width:calc(1680px * 17 / 30 - 4px)"><b>Período de pedidos:</b> dia 11 ao dia 27 · montagem dos pedidos nos dias 21 a 27</div>
+    <div class="marca-faixa" data-a="fade" data-t="4.2" style="left:calc(120px + 1680px * 27 / 30); width:calc(1680px * 3 / 30)"><b>Retiradas</b></div>
+    <div class="ret-cards">
+      <div class="ret-card" data-a="up" data-t="5.2"><span class="dia-g"><b></b>Dia 28</span><h3>Pedidos antecipados</h3></div>
+      <div class="ret-card" data-a="up" data-t="5.8"><span class="dia-g"><b></b>Dia 29</span><h3>Pedidos regulares</h3></div>
+      <div class="ret-card" data-a="up" data-t="6.4"><span class="dia-g"><b></b>Dia 30</span><h3>Pedidos finais</h3></div>
+      <div class="ret-card equipe-c" data-a="up" data-t="7.2"><span class="dia-g"><svg class="ic"><use href="#i-equipe"/></svg>Equipe</span><h3>4 funcionários</h3></div>
+    </div>
+  </section>
+
+  <!-- 8. Cronograma geral -->
+  <section class="cena" data-dur="18">
+    <div class="topo"><img src="../assets/img/logo-jardins.webp" alt=""><span class="etapa">Visão geral</span></div>
+    <div class="esq">
+      <h2 class="titulo" data-a="up" data-t="0.4">Cronograma <em>geral</em></h2>
+    </div>
+    <div class="gantt" id="gantt"></div>
+  </section>
+
+  <!-- 9. Orçamento e equipe -->
+  <section class="cena" data-dur="14">
+    <div class="topo"><img src="../assets/img/logo-jardins.webp" alt=""><span class="etapa">Orçamento e equipe</span></div>
+    <div class="s9-hero" data-a="up" data-t="0.4">
+      <div class="rot">Orçamento total</div>
+      <div class="num">R$ <span data-count="11800" data-ct="0.8" data-cd="2.2">11.800</span></div>
+    </div>
+    <div class="empilhada">
+      <i class="a gx" data-a="grow-x" data-t="1.6" data-d="1.3"></i>
+      <i class="b gx" data-a="grow-x" data-t="2.7" data-d="0.8"></i>
+    </div>
+    <div class="leg-orc" data-a="fade" data-t="2.4" style="left:120px">
+      <span><b style="background:var(--g-verde)"></b>Compras · dias 1 a 10</span>
+      <strong>R$ 9.000</strong>
+    </div>
+    <div class="leg-orc" data-a="fade" data-t="3.3" style="right:120px; align-items:flex-end; text-align:right">
+      <span><b style="background:var(--g-rosa)"></b>Ponto de vendas e stand · dias 11 a 20</span>
+      <strong>R$ 2.800</strong>
+    </div>
+    <p class="obs" data-a="fade" data-t="4.2">Encomendas e preparação final usam o estoque e a equipe já previstos.</p>
+    <div class="tiles">
+      <div class="tile" data-a="up" data-t="5.0"><span class="n">3</span><span class="t">funcionários<br>fixos</span></div>
+      <div class="tile" data-a="up" data-t="5.5"><span class="n">4</span><span class="t">funcionários<br>temporários</span></div>
+      <div class="tile" data-a="up" data-t="6.0"><span class="n">7</span><span class="t">no período de<br>maior movimento</span></div>
+    </div>
+  </section>
+
+  <!-- 10. Encerramento -->
+  <section class="cena" data-dur="8">
+    <div class="s10">
+      <img class="logo" data-a="zoom" data-t="0.3" data-d="1.3" src="../assets/img/logo-jardins.webp" alt="">
+      <h2 class="titulo" data-a="up" data-t="1.0">Tudo pronto para o <em>Dia das Mães</em></h2>
+      <p class="sub" data-a="up" data-t="1.4">Floricultura Jardins · Transformando sentimentos em flores.</p>
+    </div>
+    <div class="s10-fotos">
+      <div class="ft" data-a="up" data-t="2.0"><img data-kb src="../assets/img/buque-colecao.jpg" alt=""></div>
+      <div class="ft" data-a="up" data-t="2.2"><img data-kb src="../assets/img/box-flores.jpg" alt=""></div>
+      <div class="ft" data-a="up" data-t="2.4"><img data-kb src="../assets/img/planta.jpg" alt=""></div>
+      <div class="ft" data-a="up" data-t="2.6"><img data-kb src="../assets/img/cesta-presente.jpg" alt=""></div>
+    </div>
+  </section>
+</div>
+
+<script>
+(() => {
+  const palco = document.getElementById('palco');
+
+  /* Faixa de 30 dias (cena 7) */
+  const faixa = document.getElementById('faixa-dias');
+  for (let d = 1; d <= 30; d++) {
+    const c = document.createElement('div');
+    c.textContent = d;
+    if (d >= 11 && d <= 27) c.className = 'rec';
+    if (d >= 28) c.className = 'ret';
+    c.dataset.a = 'zoom';
+    c.dataset.t = (1.2 + d * 0.06).toFixed(2);
+    c.dataset.d = '0.5';
+    faixa.appendChild(c);
+  }
+
+  /* Gantt (cena 8): dias 1 a 30 no eixo, uma linha por etapa */
+  const gantt = document.getElementById('gantt');
+  const X0 = 600, LARG = 1680 - X0, porDia = LARG / 30;
+  const xDia = (d) => X0 + (d - 1) * porDia;
+  [1, 5, 10, 15, 20, 25].forEach((d) => {
+    const t = document.createElement('span');
+    t.className = 'tick';
+    t.style.left = `${xDia(d) + porDia / 2}px`;
+    t.innerHTML = `<span>Dia ${d}</span>`;
+    t.dataset.a = 'fade'; t.dataset.t = '0.9';
+    gantt.appendChild(t);
+  });
+  const etapas = [
+    ['Compras e planejamento', 1, 10],
+    ['Ponto de vendas e stand', 11, 20],
+    ['Recebimento das encomendas', 11, 27],
+    ['Preparação dos pedidos', 21, 27],
+    ['Retiradas e atendimento intensivo', 28, 30],
+  ];
+  etapas.forEach(([nome, a, b], i) => {
+    const y = 50 + i * 96;
+    const ini = 1.4 + i * 1.5;
+    const rot = document.createElement('span');
+    rot.className = 'rot'; rot.style.top = `${y}px`; rot.textContent = nome;
+    rot.dataset.a = 'fade'; rot.dataset.t = ini.toFixed(2);
+    const bar = document.createElement('span');
+    bar.className = 'bar';
+    bar.style.left = `${xDia(a)}px`; bar.style.width = `${(b - a + 1) * porDia}px`; bar.style.top = `${y}px`;
+    bar.dataset.a = 'grow-x'; bar.dataset.t = (ini + 0.2).toFixed(2); bar.dataset.d = '1.1';
+    const lab = document.createElement('span');
+    lab.className = 'bar-rot'; lab.style.top = `${y}px`;
+    lab.textContent = `Dias ${a} a ${b}`;
+    // rótulo fora da barra: à direita, ou à esquerda quando a barra chega perto do fim do eixo
+    if (b >= 25) { lab.style.right = `${1680 - xDia(a) + 16}px`; } else { lab.style.left = `${xDia(b + 1) + 16}px`; }
+    lab.dataset.a = 'fade'; lab.dataset.t = (ini + 1.0).toFixed(2);
+    gantt.append(rot, bar, lab);
+  });
+  const fim = document.createElement('span');
+  fim.className = 'fim'; fim.style.left = `${xDia(31) - 2}px`;
+  fim.innerHTML = '<span>Dia 30 · encerramento da preparação</span>';
+  fim.dataset.a = 'fade'; fim.dataset.t = '9.4';
+  gantt.appendChild(fim);
+
+  /* Linha do tempo */
+  const FADE = 0.7;
+  const cenas = [...document.querySelectorAll('.cena')];
+  let inicio = 0;
+  const agenda = cenas.map((c) => {
+    const dur = Number(c.dataset.dur);
+    const item = { c, s: inicio, dur, els: [...c.querySelectorAll('[data-a]')], cont: [...c.querySelectorAll('[data-count]')], kb: [...c.querySelectorAll('[data-kb]')] };
+    inicio += dur - FADE;
+    return item;
+  });
+  const TOTAL = agenda.at(-1).s + agenda.at(-1).dur;
+  const limita = (v) => Math.min(1, Math.max(0, v));
+  const suave = (p) => 1 - Math.pow(1 - p, 3);
+  const fmt = (n) => Math.round(n).toLocaleString('pt-BR');
+
+  function renderAt(t) {
+    agenda.forEach(({ c, s, dur, els, cont, kb }, i) => {
+      const local = t - s;
+      if (local < 0 || local > dur) { c.style.visibility = 'hidden'; c.style.opacity = 0; return; }
+      let op = limita(local / (i === 0 ? 0.6 : FADE));
+      if (i < agenda.length - 1) op = Math.min(op, limita((dur - local) / FADE));
+      c.style.visibility = 'visible';
+      c.style.opacity = op;
+      els.forEach((el) => {
+        const p = limita((local - Number(el.dataset.t || 0)) / Number(el.dataset.d || 0.9));
+        const e = suave(p);
+        const st = el.style;
+        switch (el.dataset.a) {
+          case 'up': st.opacity = e; st.transform = `translate3d(0, ${(1 - e) * 42}px, 0)`; break;
+          case 'left': st.opacity = e; st.transform = `translate3d(${(e - 1) * 70}px, 0, 0)`; break;
+          case 'right': st.opacity = e; st.transform = `translate3d(${(1 - e) * 80}px, 0, 0)`; break;
+          case 'zoom': st.opacity = e; st.transform = `scale(${0.9 + 0.1 * e})`; break;
+          case 'grow-x': st.transform = `${el.classList.contains('bar') ? 'translateY(-50%) ' : ''}scaleX(${e})`; break;
+          case 'grow-y': st.transform = `scaleY(${e})`; break;
+          default: st.opacity = e;
+        }
+      });
+      cont.forEach((el) => {
+        const p = limita((local - Number(el.dataset.ct)) / Number(el.dataset.cd));
+        el.textContent = fmt(Number(el.dataset.count) * suave(p));
+      });
+      kb.forEach((img) => { img.style.transform = `scale(${1.08 - 0.08 * limita(local / dur)})`; });
+    });
+  }
+
+  const imagens = [...document.images].map((img) => img.decode().catch(() => {}));
+  window.TOTAL = TOTAL;
+  window.CENAS = agenda.map(({ s, dur }) => ({ inicio: s, dur }));
+  window.renderAt = renderAt;
+  window.pronto = Promise.all([document.fonts.ready, ...imagens]).then(() => { renderAt(0); return TOTAL; });
+
+  // Sem "?render": toca em loop, ajustado ao tamanho da janela (para conferir no navegador)
+  if (!new URLSearchParams(location.search).has('render')) {
+    const ajusta = () => {
+      const k = Math.min(innerWidth / 1920, innerHeight / 1080);
+      palco.style.transform = `scale(${k})`;
+    };
+    addEventListener('resize', ajusta); ajusta();
+    window.pronto.then(() => {
+      const t0 = performance.now();
+      const loop = (agora) => { renderAt(((agora - t0) / 1000) % TOTAL); requestAnimationFrame(loop); };
+      requestAnimationFrame(loop);
+    });
+  }
+})();
+</script>
+</body>
+</html>
