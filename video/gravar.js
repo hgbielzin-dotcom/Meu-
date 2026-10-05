@@ -40,7 +40,9 @@ const FPS = 30;
     '-f', 'image2pipe', '-framerate', String(FPS), '-c:v', 'mjpeg', '-i', '-',
     ...audio,
     '-map', '0:v', '-map', '1:a', '-t', total.toFixed(3),
-    '-c:v', 'libx264', '-preset', 'slow', '-crf', '20', '-pix_fmt', 'yuv420p',
+    // perfil High nível 4.0 com 3 quadros de referência: toca em qualquer celular
+    '-c:v', 'libx264', '-preset', 'slow', '-crf', '21', '-profile:v', 'high', '-level:v', '4.0',
+    '-x264-params', 'ref=3:bframes=2', '-maxrate', '8M', '-bufsize', '16M', '-pix_fmt', 'yuv420p', '-tag:v', 'avc1',
     '-c:a', 'aac', '-b:a', '160k', '-movflags', '+faststart', SAIDA,
   ], { stdio: ['pipe', 'inherit', 'inherit'] });
 
