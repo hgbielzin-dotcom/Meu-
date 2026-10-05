@@ -1,7 +1,7 @@
 /* ==========================================================================
    Floricultura Jardins
-   Layout: seções alternando creme, branco e verde-sálvia, fotos em formas
-   orgânicas (arcos, folhas e cantos suaves) e muito respiro entre os blocos.
+   Layout: seções alternando creme, branco e verde-sálvia, fotos em molduras
+   suaves (arcos e cantos arredondados) e muito respiro entre os blocos.
    ========================================================================== */
 
 /* ---------- Fontes (hospedadas no projeto, licença OFL) ---------- */
@@ -344,18 +344,11 @@ address { font-style: normal; }
 .btn--lg { padding: 1.1rem 1.9rem; font-size: .92rem; }
 .btn--block { width: 100%; }
 
-/* ---------- Fotos com reserva floral (aparece se a imagem não carregar) ---------- */
+/* ---------- Fotos (fundo suave enquanto carregam) ---------- */
 .media {
   position: relative;
   overflow: hidden;
-  background-color: var(--rosa-suave);
-  background-image:
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%238FA98C' stroke-width='.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 5a3 3 0 1 1 3 3m-3-3a3 3 0 1 0-3 3m3-3v1M9 8a3 3 0 1 0 3 3M9 8h1m5 0a3 3 0 1 1-3 3m3-3h-1m-2 3v-1'/%3E%3Ccircle cx='12' cy='8' r='2'/%3E%3Cpath d='M12 10v12'/%3E%3Cpath d='M12 22c4.2 0 7-1.667 7-5-4.2 0-7 1.667-7 5Z'/%3E%3Cpath d='M12 22c-4.2 0-7-1.667-7-5 4.2 0 7 1.667 7 5Z'/%3E%3C/svg%3E"),
-    radial-gradient(circle at 22% 18%, rgba(232, 166, 181, .5), transparent 60%),
-    radial-gradient(circle at 82% 88%, rgba(143, 169, 140, .42), transparent 55%);
-  background-repeat: no-repeat;
-  background-position: center, 0 0, 0 0;
-  background-size: clamp(40px, 24%, 110px) auto, cover, cover;
+  background: linear-gradient(150deg, var(--rosa-suave), var(--creme) 60%, var(--salvia-claro));
 }
 .media > img {
   position: absolute;
@@ -691,16 +684,6 @@ address { font-style: normal; }
   border-radius: 999px 999px var(--raio-lg) var(--raio-lg);
   box-shadow: var(--sombra-lg);
 }
-.hero__folha {
-  position: absolute;
-  left: 0;
-  top: 6%;
-  width: 170px;
-  height: 170px;
-  fill: var(--salvia);
-  opacity: .28;
-  animation: balanco 9s ease-in-out infinite alternate;
-}
 
 .hero__card {
   position: absolute;
@@ -781,24 +764,6 @@ address { font-style: normal; }
   animation: fadeIn 1s var(--ease) 1.4s backwards;
 }
 
-/* Pétalas flutuantes */
-.petalas { position: absolute; inset: 0; z-index: 0; pointer-events: none; }
-.petala {
-  position: absolute;
-  width: 22px;
-  height: 22px;
-  fill: var(--rosa);
-  opacity: .5;
-  animation: deriva 12s ease-in-out infinite alternate;
-}
-.petala--1 { top: 17%; left: 4%; width: 18px; height: 18px; --r: -20deg; animation-duration: 11s; }
-.petala--2 { top: 74%; left: 42%; width: 14px; height: 14px; --r: 40deg; animation-duration: 13s; opacity: .4; }
-.petala--3 { top: 24%; left: 48%; width: 26px; height: 26px; fill: var(--salvia); opacity: .35; --r: 10deg; animation-duration: 15s; }
-.petala--4 { top: 11%; right: 40%; width: 15px; height: 15px; --r: 70deg; animation-duration: 10s; opacity: .35; }
-.petala--5 { bottom: 12%; left: 14%; width: 30px; height: 30px; fill: var(--salvia); opacity: .3; --r: -30deg; animation-duration: 16s; }
-.petala--6 { top: 56%; right: 3%; width: 20px; height: 20px; --r: 120deg; animation-duration: 12s; }
-.petala--7 { bottom: 20%; right: 47%; width: 12px; height: 12px; --r: 200deg; animation-duration: 9s; opacity: .45; }
-
 .scroll-hint {
   position: absolute;
   left: 50%;
@@ -834,9 +799,60 @@ address { font-style: normal; }
 }
 
 /* ==========================================================================
+   COLEÇÕES
+   ========================================================================== */
+.colecoes {
+  padding-bottom: clamp(40px, 5vw, 64px);
+  background: linear-gradient(var(--creme), var(--branco) 320px);
+}
+.colecoes__grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: clamp(16px, 2vw, 28px);
+}
+.colecao {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid var(--linha);
+  border-radius: var(--raio-lg);
+  background: var(--branco);
+  box-shadow: 0 18px 40px -32px rgba(47, 54, 48, .35);
+  transition: transform .6s var(--ease-out), box-shadow .6s var(--ease-out), border-color .4s var(--ease);
+}
+.colecao:hover {
+  transform: translateY(-8px);
+  border-color: transparent;
+  box-shadow: 0 36px 64px -32px rgba(47, 54, 48, .4);
+}
+.colecao__media { aspect-ratio: 4 / 5; background: #F3C6A9; }
+.colecao:hover .colecao__media img { transform: scale(1.06); }
+.colecao__info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: .8rem;
+  padding: 1.1rem 1.2rem 1.2rem;
+}
+.colecao__info h3 { font-size: 1.25rem; font-weight: 500; line-height: 1.25; }
+.colecao__info span { font-size: .8rem; color: var(--texto-suave); }
+.colecao__seta {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--rosa-claro);
+  color: var(--rosa-profundo);
+  transition: background-color .35s var(--ease), color .35s var(--ease), transform .45s var(--ease-out);
+}
+.colecao:hover .colecao__seta { background: var(--verde); color: var(--creme); transform: translateX(3px); }
+
+/* ==========================================================================
    PRODUTOS
    ========================================================================== */
-.produtos { background: linear-gradient(var(--creme), var(--branco) 280px); }
+.produtos { padding-top: clamp(40px, 5vw, 64px); background: var(--branco); }
 
 .produtos__grid {
   display: grid;
@@ -972,17 +988,6 @@ address { font-style: normal; }
   overflow: hidden;
   background: linear-gradient(180deg, var(--branco) 0%, var(--rosa-suave) 20%, var(--rosa-claro) 52%, var(--rosa-suave) 84%, var(--creme) 100%);
 }
-.maes__deco {
-  position: absolute;
-  fill: none;
-  stroke: var(--rosa);
-  stroke-width: .5;
-  opacity: .38;
-  pointer-events: none;
-}
-.maes__deco--1 { width: 340px; height: 340px; right: -130px; top: 2%; transform: rotate(12deg); }
-.maes__deco--2 { width: 220px; height: 220px; left: -70px; bottom: 4%; transform: rotate(-18deg); }
-
 .maes__grid {
   position: relative;
   display: grid;
@@ -1226,28 +1231,6 @@ address { font-style: normal; }
   color: var(--texto-suave);
 }
 
-/* ---------- Ornamento floral entre seções ---------- */
-.ornamento {
-  display: flex;
-  justify-content: center;
-  padding-block: 6px;
-  background: var(--creme);
-}
-.ornamento__svg { width: 220px; height: 36px; color: var(--salvia); }
-.ornamento .desenho {
-  stroke: currentColor;
-  stroke-width: 1.1;
-  stroke-linecap: round;
-  stroke-dasharray: 1;
-  stroke-dashoffset: 0;
-}
-.js .ornamento:not(.is-visible) .desenho { stroke-dashoffset: 1; }
-.ornamento.is-visible .desenho { animation: desenhar 1.8s var(--ease) backwards; }
-.ornamento__botao { fill: var(--rosa); }
-.ornamento__ponto { fill: var(--salvia); }
-.js .ornamento:not(.is-visible) circle { opacity: 0; }
-.ornamento.is-visible circle { animation: fadeIn 1s var(--ease) .9s backwards; }
-
 /* ==========================================================================
    PROPÓSITO
    ========================================================================== */
@@ -1273,19 +1256,6 @@ address { font-style: normal; }
   background: var(--branco);
   box-shadow: var(--sombra);
 }
-.proposito__marca {
-  position: absolute;
-  right: -34px;
-  bottom: -34px;
-  width: 160px;
-  height: 160px;
-  fill: none;
-  stroke: currentColor;
-  stroke-width: .6;
-  opacity: .08;
-  transition: transform 1.4s var(--ease-out);
-}
-.proposito__card:hover .proposito__marca { transform: rotate(45deg) scale(1.06); }
 .proposito__icone {
   width: 60px;
   height: 60px;
@@ -1311,7 +1281,6 @@ address { font-style: normal; }
 .proposito__card--destaque h3 { color: var(--creme); }
 .proposito__card--destaque p { color: rgba(255, 248, 242, .82); }
 .proposito__card--destaque .proposito__icone { background: rgba(255, 255, 255, .1); color: var(--rosa-claro); }
-.proposito__card--destaque .proposito__marca { opacity: .12; }
 
 /* ==========================================================================
    PRINCÍPIOS (faixa verde com bordas curvas)
@@ -2033,11 +2002,10 @@ address { font-style: normal; }
   inset: 0;
   z-index: 1;
   background:
-    radial-gradient(ellipse at center, rgba(47, 54, 48, .15), transparent 70%),
-    linear-gradient(180deg, rgba(47, 54, 48, .38) 0%, rgba(53, 73, 58, .68) 100%);
+    radial-gradient(ellipse at center, rgba(47, 54, 48, .28), transparent 70%),
+    linear-gradient(180deg, rgba(47, 54, 48, .5) 0%, rgba(53, 73, 58, .72) 100%);
 }
 .cta__conteudo { position: relative; z-index: 2; max-width: 720px; color: var(--creme); }
-.cta__marca { width: 54px; height: 54px; margin: 0 auto 1.4rem; --logo-caule: var(--rosa-claro); }
 .cta__titulo {
   font-size: clamp(2.2rem, 1.4rem + 3vw, 3.8rem);
   font-weight: 400;
@@ -2307,20 +2275,11 @@ address { font-style: normal; }
   50% { transform: translate3d(0, -10px, 0); }
 }
 @keyframes girar { to { transform: rotate(360deg); } }
-@keyframes deriva {
-  from { transform: translate3d(0, 0, 0) rotate(var(--r, 0deg)); }
-  to { transform: translate3d(14px, -22px, 0) rotate(calc(var(--r, 0deg) + 28deg)); }
-}
-@keyframes balanco {
-  from { transform: rotate(-22deg); }
-  to { transform: rotate(-12deg) translate3d(0, -8px, 0); }
-}
 @keyframes desce { from { top: -40%; } to { top: 100%; } }
 @keyframes pulso {
   from { transform: scale(1); opacity: .7; }
   to { transform: scale(1.55); opacity: 0; }
 }
-@keyframes desenhar { from { stroke-dashoffset: 1; } }
 @keyframes modalEntra { from { opacity: 0; transform: translate3d(0, 24px, 0) scale(.97); } }
 @keyframes zoomEntra { from { opacity: 0; transform: scale(.96); } }
 @keyframes pop { 50% { transform: scale(1.35); } }
@@ -2337,6 +2296,7 @@ address { font-style: normal; }
   .menu-toggle { display: inline-flex; }
 
   .produtos__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .colecoes__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 
   .principios__lista { grid-template-columns: repeat(6, minmax(0, 1fr)); row-gap: 2rem; }
   .principio { grid-column: span 2; }
@@ -2414,9 +2374,14 @@ address { font-style: normal; }
   .selo { width: 104px; height: 104px; }
   .selo--hero { right: 0; }
   .selo__centro { width: 38px; height: 38px; }
-  .hero__folha { width: 120px; height: 120px; }
 
   .produtos__grid { grid-template-columns: minmax(0, 1fr); }
+  .colecoes__grid { gap: 12px; }
+  .colecao { border-radius: var(--raio); }
+  .colecao__info { padding: .85rem .9rem 1rem; }
+  .colecao__info h3 { font-size: 1.02rem; }
+  .colecao__info span { font-size: .72rem; }
+  .colecao__seta { display: none; }
   .sec-head--split { align-items: flex-start; }
 
   .maes__lista { grid-template-columns: minmax(0, 1fr); }
@@ -2484,6 +2449,4 @@ address { font-style: normal; }
   }
   .js [data-reveal]:not(.is-visible),
   .js [data-stagger] > :not(.is-visible) { opacity: 1; }
-  .js .ornamento:not(.is-visible) .desenho { stroke-dashoffset: 0; }
-  .js .ornamento:not(.is-visible) circle { opacity: 1; }
 }

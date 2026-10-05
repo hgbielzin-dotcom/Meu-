@@ -139,7 +139,7 @@
     });
   });
 
-  const revelaveis = $$('[data-reveal], [data-stagger] > *, .ornamento');
+  const revelaveis = $$('[data-reveal], [data-stagger] > *');
 
   function revelar(el) {
     el.classList.add('is-visible');

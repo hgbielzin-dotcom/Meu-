@@ -66,9 +66,6 @@
       <path d="M16 6.5c-1.3 3.6-1.3 7.6 0 11" stroke="#C97C8F" stroke-width=".8" stroke-linecap="round" fill="none" opacity=".55"/>
     </symbol>
 
-    <!-- Pétala decorativa -->
-    <symbol id="petala" viewBox="0 0 40 40"><path d="M20 2C29 10 33 20 20 38 7 20 11 10 20 2z" stroke="none"/></symbol>
-    <symbol id="folha" viewBox="0 0 40 40"><path d="M4 36C6 16 18 5 36 4 35 22 24 34 4 36z" stroke="none"/><path d="M6 34 30 10" fill="none" stroke="rgba(255,255,255,.55)" stroke-width="1.2"/></symbol>
   </svg>
 
   <!-- ========================= HEADER ========================= -->
@@ -146,16 +143,6 @@
       <div class="hero__glow hero__glow--rosa" data-parallax="-0.06" aria-hidden="true"></div>
       <div class="hero__glow hero__glow--verde" data-parallax="0.05" aria-hidden="true"></div>
 
-      <!-- Pétalas flutuantes -->
-      <div class="petalas" aria-hidden="true">
-        <svg class="petala petala--1"><use href="#petala"/></svg>
-        <svg class="petala petala--2"><use href="#petala"/></svg>
-        <svg class="petala petala--3"><use href="#folha"/></svg>
-        <svg class="petala petala--4"><use href="#petala"/></svg>
-        <svg class="petala petala--5"><use href="#folha"/></svg>
-        <svg class="petala petala--6"><use href="#petala"/></svg>
-        <svg class="petala petala--7"><use href="#petala"/></svg>
-      </div>
 
       <div class="container hero__grid">
         <div class="hero__content">
@@ -204,23 +191,22 @@
         </div>
 
         <div class="hero__visual">
-          <svg class="hero__folha" aria-hidden="true"><use href="#folha"/></svg>
           <figure class="hero__arch media">
-            <img src="https://unsplash.com/photos/yXep6PC-qfo/download?w=1400"
-                 alt="Buquê de flores cor-de-rosa e brancas sobre fundo rosa"
-                 width="1400" height="1750" fetchpriority="high">
+            <img src="assets/img/buque.jpg"
+                 alt="Buquê de rosas, gérberas e margaridas em tons de pêssego, embrulhado com laço de cetim"
+                 width="1122" height="1402" fetchpriority="high">
           </figure>
 
           <div class="hero__card">
             <div class="hero__card-media media">
-              <img src="https://unsplash.com/photos/CpU70USe3RM/download?w=500"
-                   alt="Buquê de rosas cor-de-rosa com tulipas brancas"
-                   width="500" height="500" loading="lazy">
+              <img src="assets/img/box-flores-detalhe.jpg"
+                   alt="Rosas, gérberas e cravos arranjados em uma caixa"
+                   width="520" height="520">
             </div>
             <div>
               <span class="hero__card-label">Mais pedido da semana</span>
-              <strong class="hero__card-title">Buquê Amor de Mãe</strong>
-              <span class="hero__card-price">R$ 129,90</span>
+              <strong class="hero__card-title">Box Flores &amp; Carinho</strong>
+              <span class="hero__card-price">R$ 169,90</span>
             </div>
           </div>
 
@@ -234,10 +220,76 @@
         </div>
       </div>
 
-      <a class="scroll-hint" href="#produtos" aria-label="Rolar para os produtos">
+      <a class="scroll-hint" href="#colecoes" aria-label="Rolar para as coleções">
         <span>Role para descobrir</span>
         <span class="scroll-hint__line" aria-hidden="true"></span>
       </a>
+    </section>
+
+    <!-- ========================= COLEÇÕES ========================= -->
+    <section class="section colecoes" id="colecoes" aria-labelledby="colecoes-titulo">
+      <div class="container">
+        <header class="sec-head sec-head--split">
+          <div data-reveal="up">
+            <span class="eyebrow">Coleções</span>
+            <h2 class="sec-title" id="colecoes-titulo">Presentes para todos os <em>estilos</em></h2>
+          </div>
+          <p class="sec-sub" data-reveal="up" style="--d:.12s">
+            Buquês, caixas, plantas e cestas montados à mão, prontos para presentear.
+          </p>
+        </header>
+
+        <div class="colecoes__grid" data-stagger>
+          <a class="colecao" href="#produtos">
+            <div class="colecao__media media">
+              <img src="assets/img/buque-colecao.jpg" alt="Buquê de rosas e gérberas em tons de pêssego" width="800" height="1000" loading="lazy">
+            </div>
+            <div class="colecao__info">
+              <div>
+                <h3>Buquês</h3>
+                <span>A partir de R$ 119,90</span>
+              </div>
+              <span class="colecao__seta" aria-hidden="true"><svg class="ic"><use href="#i-arrow-right"/></svg></span>
+            </div>
+          </a>
+          <a class="colecao" href="#produtos">
+            <div class="colecao__media media">
+              <img src="assets/img/box-flores.jpg" alt="Arranjo de rosas, gérberas e cravos em uma caixa redonda" width="1122" height="1402" loading="lazy">
+            </div>
+            <div class="colecao__info">
+              <div>
+                <h3>Box de flores</h3>
+                <span>A partir de R$ 149,90</span>
+              </div>
+              <span class="colecao__seta" aria-hidden="true"><svg class="ic"><use href="#i-arrow-right"/></svg></span>
+            </div>
+          </a>
+          <a class="colecao" href="#contato">
+            <div class="colecao__media media">
+              <img src="assets/img/planta.jpg" alt="Lírio-da-paz em vaso de cerâmica claro" width="1122" height="1402" loading="lazy">
+            </div>
+            <div class="colecao__info">
+              <div>
+                <h3>Plantas</h3>
+                <span>A partir de R$ 89,90</span>
+              </div>
+              <span class="colecao__seta" aria-hidden="true"><svg class="ic"><use href="#i-arrow-right"/></svg></span>
+            </div>
+          </a>
+          <a class="colecao" href="#contato">
+            <div class="colecao__media media">
+              <img src="assets/img/cesta-presente.jpg" alt="Cesta de presente com flores, vela, mel, biscoitos e espumante" width="1122" height="1402" loading="lazy">
+            </div>
+            <div class="colecao__info">
+              <div>
+                <h3>Cestas de presente</h3>
+                <span>A partir de R$ 169,90</span>
+              </div>
+              <span class="colecao__seta" aria-hidden="true"><svg class="ic"><use href="#i-arrow-right"/></svg></span>
+            </div>
+          </a>
+        </div>
+      </div>
     </section>
 
     <!-- ========================= PRODUTOS ========================= -->
@@ -402,9 +454,6 @@
 
     <!-- ========================= DIA DAS MÃES ========================= -->
     <section class="section maes" id="dia-das-maes" aria-labelledby="maes-titulo">
-      <svg class="maes__deco maes__deco--1" aria-hidden="true"><use href="#i-flower-2"/></svg>
-      <svg class="maes__deco maes__deco--2" aria-hidden="true"><use href="#i-flower"/></svg>
-
       <div class="container maes__grid">
         <div class="maes__colagem" data-reveal="left">
           <figure class="colagem__principal media">
@@ -414,15 +463,15 @@
           </figure>
 
           <figure class="colagem__flores media" data-parallax="-0.05">
-            <img src="https://unsplash.com/photos/2QbRkn2y0Vo/download?w=600"
-                 alt="Tulipas brancas sobre fundo rosa"
-                 width="600" height="600" loading="lazy">
+            <img src="assets/img/box-flores-detalhe.jpg"
+                 alt="Rosas, gérberas e margaridas em detalhe"
+                 width="520" height="520" loading="lazy">
           </figure>
 
           <figure class="colagem__presente media" data-parallax="0.06">
-            <img src="https://unsplash.com/photos/baLUAKBNsG4/download?w=600"
-                 alt="Caixa de presente branca com laço de fita e flores"
-                 width="600" height="600" loading="lazy">
+            <img src="assets/img/cesta-detalhe.jpg"
+                 alt="Cesta de presente com flores, vela e caixa com laço de cetim"
+                 width="640" height="640" loading="lazy">
           </figure>
 
           <div class="colagem__cartao" aria-label="Exemplo de cartão personalizado">
@@ -534,19 +583,6 @@
       </div>
     </section>
 
-    <div class="ornamento ornamento--creme" aria-hidden="true">
-      <svg class="ornamento__svg" viewBox="0 0 240 40" fill="none">
-        <path class="desenho" pathLength="1" d="M10 20H94"/>
-        <path class="desenho" pathLength="1" d="M146 20h84"/>
-        <path class="desenho" pathLength="1" d="M94 20c7-8 15-10 21-6"/>
-        <path class="desenho" pathLength="1" d="M94 20c7 6 13 8 19 6"/>
-        <path class="desenho" pathLength="1" d="M146 20c-7-8-15-10-21-6"/>
-        <path class="desenho" pathLength="1" d="M146 20c-7 6-13 8-19 6"/>
-        <circle class="ornamento__botao" cx="120" cy="20" r="3.4"/>
-        <circle class="ornamento__ponto" cx="5" cy="20" r="1.6"/>
-        <circle class="ornamento__ponto" cx="235" cy="20" r="1.6"/>
-      </svg>
-    </div>
 
     <!-- ========================= PROPÓSITO ========================= -->
     <section class="section proposito" id="valores" aria-labelledby="proposito-titulo">
@@ -558,19 +594,16 @@
 
         <div class="proposito__grid" data-stagger>
           <article class="proposito__card">
-            <svg class="proposito__marca" aria-hidden="true"><use href="#i-flower"/></svg>
             <span class="proposito__icone"><svg class="ic" aria-hidden="true"><use href="#i-sprout"/></svg></span>
             <h3>Missão</h3>
             <p>Transformar sentimentos em experiências especiais por meio das flores.</p>
           </article>
           <article class="proposito__card proposito__card--destaque">
-            <svg class="proposito__marca" aria-hidden="true"><use href="#i-flower"/></svg>
             <span class="proposito__icone"><svg class="ic" aria-hidden="true"><use href="#i-eye"/></svg></span>
             <h3>Visão</h3>
             <p>Ser reconhecida pela qualidade, criatividade e carinho presente em cada arranjo.</p>
           </article>
           <article class="proposito__card">
-            <svg class="proposito__marca" aria-hidden="true"><use href="#i-flower"/></svg>
             <span class="proposito__icone"><svg class="ic" aria-hidden="true"><use href="#i-heart"/></svg></span>
             <h3>Valores</h3>
             <p>Qualidade, cuidado, respeito, criatividade, confiança e amor pelo que fazemos.</p>
@@ -805,19 +838,6 @@
       </div>
     </section>
 
-    <div class="ornamento ornamento--branco" aria-hidden="true">
-      <svg class="ornamento__svg" viewBox="0 0 240 40" fill="none">
-        <path class="desenho" pathLength="1" d="M10 20H94"/>
-        <path class="desenho" pathLength="1" d="M146 20h84"/>
-        <path class="desenho" pathLength="1" d="M94 20c7-8 15-10 21-6"/>
-        <path class="desenho" pathLength="1" d="M94 20c7 6 13 8 19 6"/>
-        <path class="desenho" pathLength="1" d="M146 20c-7-8-15-10-21-6"/>
-        <path class="desenho" pathLength="1" d="M146 20c-7 6-13 8-19 6"/>
-        <circle class="ornamento__botao" cx="120" cy="20" r="3.4"/>
-        <circle class="ornamento__ponto" cx="5" cy="20" r="1.6"/>
-        <circle class="ornamento__ponto" cx="235" cy="20" r="1.6"/>
-      </svg>
-    </div>
 
     <!-- ========================= LOJA ========================= -->
     <section class="section loja" id="loja" aria-labelledby="loja-titulo">
@@ -973,27 +993,27 @@
 
         <div class="insta" data-stagger>
           <a class="insta__post media" href="https://www.instagram.com/floriculturajardins" target="_blank" rel="noopener">
-            <img src="https://unsplash.com/photos/yXsYTnm0KtI/download?w=480" alt="Publicação: rosas cor-de-rosa" width="480" height="480" loading="lazy">
+            <img src="assets/img/buque.jpg" alt="Publicação: buquê de rosas e gérberas em tons de pêssego" width="1122" height="1402" loading="lazy">
             <span class="insta__overlay"><svg class="ic ic--fill" aria-hidden="true"><use href="#i-heart"/></svg> 1.248</span>
           </a>
           <a class="insta__post media" href="https://www.instagram.com/floriculturajardins" target="_blank" rel="noopener">
-            <img src="https://unsplash.com/photos/9ZLQ2rrl-Hc/download?w=480" alt="Publicação: buquê de tulipas coloridas" width="480" height="480" loading="lazy">
+            <img src="assets/img/planta-detalhe.jpg" alt="Publicação: flores brancas do lírio-da-paz" width="520" height="520" loading="lazy">
             <span class="insta__overlay"><svg class="ic ic--fill" aria-hidden="true"><use href="#i-heart"/></svg> 986</span>
           </a>
           <a class="insta__post media" href="https://www.instagram.com/floriculturajardins" target="_blank" rel="noopener">
-            <img src="https://unsplash.com/photos/DTpKjgHpHj4/download?w=480" alt="Publicação: rosas cor-de-rosa sobre fundo branco" width="480" height="480" loading="lazy">
+            <img src="assets/img/box-flores.jpg" alt="Publicação: box de flores em caixa redonda" width="1122" height="1402" loading="lazy">
             <span class="insta__overlay"><svg class="ic ic--fill" aria-hidden="true"><use href="#i-heart"/></svg> 2.031</span>
           </a>
           <a class="insta__post media" href="https://www.instagram.com/floriculturajardins" target="_blank" rel="noopener">
-            <img src="https://unsplash.com/photos/pKg5gTRjVLk/download?w=480" alt="Publicação: buquê de gérberas cor-de-rosa com eucalipto" width="480" height="480" loading="lazy">
+            <img src="assets/img/buque-laco.jpg" alt="Publicação: laço de cetim do buquê" width="520" height="520" loading="lazy">
             <span class="insta__overlay"><svg class="ic ic--fill" aria-hidden="true"><use href="#i-heart"/></svg> 754</span>
           </a>
           <a class="insta__post media" href="https://www.instagram.com/floriculturajardins" target="_blank" rel="noopener">
-            <img src="https://unsplash.com/photos/tiqUZG67ygQ/download?w=480" alt="Publicação: rosa cor-de-rosa em detalhe" width="480" height="480" loading="lazy">
+            <img src="assets/img/cesta-presente.jpg" alt="Publicação: cesta de presente com flores" width="1122" height="1402" loading="lazy">
             <span class="insta__overlay"><svg class="ic ic--fill" aria-hidden="true"><use href="#i-heart"/></svg> 1.517</span>
           </a>
           <a class="insta__post media" href="https://www.instagram.com/floriculturajardins" target="_blank" rel="noopener">
-            <img src="https://unsplash.com/photos/7nvmTdvHaKk/download?w=480" alt="Publicação: buquê de tulipas coral e cor-de-rosa" width="480" height="480" loading="lazy">
+            <img src="assets/img/planta.jpg" alt="Publicação: lírio-da-paz em vaso de cerâmica" width="1122" height="1402" loading="lazy">
             <span class="insta__overlay"><svg class="ic ic--fill" aria-hidden="true"><use href="#i-heart"/></svg> 1.102</span>
           </a>
         </div>
@@ -1004,10 +1024,9 @@
     <section class="cta" aria-labelledby="cta-titulo">
       <div class="container">
         <div class="cta__caixa media" data-reveal="zoom">
-          <img class="cta__fundo" src="https://unsplash.com/photos/2c1ZIxAEXNM/download?w=1800"
-               alt="" width="1800" height="1200" loading="lazy" data-parallax-img="0.1">
+          <img class="cta__fundo" src="assets/img/buque-faixa.jpg"
+               alt="" width="1122" height="640" loading="lazy" data-parallax-img="0.1">
           <div class="cta__conteudo">
-            <svg class="cta__marca" aria-hidden="true"><use href="#logo-tulipa"/></svg>
             <h2 class="cta__titulo" id="cta-titulo">Há sentimentos que flores <em>dizem melhor.</em></h2>
             <p>Escolha um arranjo especial e transforme o dia de alguém que você ama.</p>
             <div class="cta__acoes">

@@ -26,12 +26,13 @@ index.html          → todas as seções da página
 css/style.css       → identidade visual, layout, responsividade e animações
 js/main.js          → menu, animações ao rolar, carrossel, modal, galeria e formulário
 assets/favicon.svg  → ícone da tulipa
+assets/img/         → fotos do buquê, box de flores, planta e cesta de presente
 assets/fonts/       → Playfair Display e Montserrat (licença OFL), funcionam offline
 ```
 
 ## Seções
 
-Início → Produtos → Dia das Mães → Nossa história → Missão, visão e valores → Princípios → Diferenciais → Depoimentos → Galeria → Loja → Contato → Redes sociais → Chamada final → Rodapé.
+Início → Coleções → Produtos → Dia das Mães → Nossa história → Missão, visão e valores → Princípios → Diferenciais → Depoimentos → Galeria → Loja → Contato → Redes sociais → Chamada final → Rodapé.
 
 ## Identidade visual
 
@@ -51,12 +52,12 @@ Títulos em **Playfair Display** e textos em **Montserrat**.
 
 ## Animações e interações
 
-- Título do topo surgindo palavra por palavra, imagem entrando pela lateral e pétalas flutuando de leve.
+- Título do topo surgindo palavra por palavra e imagem entrando pela lateral.
 - Elementos aparecendo conforme a rolagem (fade-up, fade-in, slide lateral e entrada em sequência).
 - Parallax leve nas fotos (somente em telas grandes).
 - Header transparente que ganha fundo branco e sombra ao rolar, e link ativo conforme a seção.
 - Hover nos cards (foto com zoom e card subindo) e nos botões (brilho, leve aumento e seta deslizando).
-- Ornamentos florais desenhados entre seções e faixa verde com bordas curvas.
+- Faixa verde com bordas curvas e transições suaves de fundo entre as seções.
 - Modal “Ver detalhes” para cada produto, com link de pedido pelo WhatsApp.
 - Carrossel de depoimentos (automático, com setas, pontos e gesto de deslizar).
 - Galeria com ampliação da imagem (lightbox).
@@ -79,18 +80,35 @@ Títulos em **Playfair Display** e textos em **Montserrat**.
 
 ## Fotos
 
-As fotos são do [Unsplash](https://unsplash.com) (licença gratuita do Unsplash) e carregam direto de lá, então **é preciso estar conectado à internet** para vê-las. Se alguma não carregar, aparece no lugar um fundo floral em rosa e verde, e o layout continua intacto.
+### Fotos do projeto (`assets/img/`)
 
-Para usar fotos próprias (por exemplo, da sua pasta de imagens), salve os arquivos em `assets/img/` e troque o `src` da imagem em `index.html`:
+São as fotos enviadas para o site (buquê, box de flores, planta e cesta de presente) e recortes delas. Ficam dentro do projeto, então aparecem sempre, mesmo sem internet.
+
+| Arquivo | Onde aparece |
+| --- | --- |
+| `assets/img/buque.jpg` | Início, Instagram |
+| `assets/img/box-flores-detalhe.jpg` | Início, Dia das Mães |
+| `assets/img/buque-colecao.jpg` | Coleções |
+| `assets/img/box-flores.jpg` | Coleções, Instagram |
+| `assets/img/planta.jpg` | Coleções, Instagram |
+| `assets/img/cesta-presente.jpg` | Coleções, Instagram |
+| `assets/img/cesta-detalhe.jpg` | Dia das Mães |
+| `assets/img/planta-detalhe.jpg` | Instagram |
+| `assets/img/buque-laco.jpg` | Instagram |
+| `assets/img/buque-faixa.jpg` | Chamada final |
+
+### Fotos do Unsplash
+
+As demais fotos são do [Unsplash](https://unsplash.com) (licença gratuita do Unsplash) e carregam direto de lá, então **é preciso estar conectado à internet** para vê-las. Enquanto carregam, ou se alguma não carregar, o espaço fica com um fundo liso em tons de rosa e creme.
+
+Para trocar qualquer uma por uma foto sua, salve o arquivo em `assets/img/` e mude o `src` da imagem em `index.html`:
 
 ```html
-<img src="assets/img/buque-amor-de-mae.jpg" alt="Buquê de rosas em tons delicados" ...>
+<img src="assets/img/minha-foto.jpg" alt="Descrição da foto" ...>
 ```
 
 | Seção | Foto | Unsplash |
 | --- | --- | --- |
-| Início | Buquê de flores cor-de-rosa e brancas sobre fundo rosa | [yXep6PC-qfo](https://unsplash.com/photos/yXep6PC-qfo) |
-| Início | Buquê de rosas cor-de-rosa com tulipas brancas | [CpU70USe3RM](https://unsplash.com/photos/CpU70USe3RM) |
 | Produtos | Buquê de rosas em tons delicados de bege e rosa | [lwlbLowPcHE](https://unsplash.com/photos/lwlbLowPcHE) |
 | Produtos | Tulipas coloridas arranjadas em um vaso de vidro | [ZxSNWVS4HWE](https://unsplash.com/photos/ZxSNWVS4HWE) |
 | Produtos | Buquê de flores variadas embrulhado em papel kraft | [zrmCrWCbHPA](https://unsplash.com/photos/zrmCrWCbHPA) |
@@ -98,8 +116,6 @@ Para usar fotos próprias (por exemplo, da sua pasta de imagens), salve os arqui
 | Produtos | Pessoa segurando um buquê clássico de rosas vermelhas | [qJy61YwqQB8](https://unsplash.com/photos/qJy61YwqQB8) |
 | Produtos | Peônias cor-de-rosa em um vaso sobre superfície rosa | [Grtj6vZttDA](https://unsplash.com/photos/Grtj6vZttDA) |
 | Dia das Mães | Mulher sorrindo ao receber um buquê de rosas | [EQ1MR3mKg9w](https://unsplash.com/photos/EQ1MR3mKg9w) |
-| Dia das Mães | Tulipas brancas sobre fundo rosa | [2QbRkn2y0Vo](https://unsplash.com/photos/2QbRkn2y0Vo) |
-| Dia das Mães | Caixa de presente branca com laço de fita e flores | [baLUAKBNsG4](https://unsplash.com/photos/baLUAKBNsG4) |
 | Nossa história | Florista preparando um arranjo de flores dentro da loja | [3DyfEiITFz4](https://unsplash.com/photos/3DyfEiITFz4) |
 | Nossa história | Mãos amarrando um buquê com barbante e tesoura sobre a bancada | [cb7N6IIC5QA](https://unsplash.com/photos/cb7N6IIC5QA) |
 | Mais do que flores | Florista de avental criando um arranjo de flores no ateliê | [Ir4w5n4GSqo](https://unsplash.com/photos/Ir4w5n4GSqo) |
@@ -113,12 +129,5 @@ Para usar fotos próprias (por exemplo, da sua pasta de imagens), salve os arqui
 | Galeria | Tulipas cor-de-rosa, brancas e vermelhas | [43m51FRyG88](https://unsplash.com/photos/43m51FRyG88) |
 | Galeria | Tulipas coloridas em vaso de vidro na janela | [l-6cbjLd2N4](https://unsplash.com/photos/l-6cbjLd2N4) |
 | Loja | Fachada charmosa da floricultura com plantas e guirlandas na entrada | [Izb_LX0E5yw](https://unsplash.com/photos/Izb_LX0E5yw) |
-| Instagram | Publicação: rosas cor-de-rosa | [yXsYTnm0KtI](https://unsplash.com/photos/yXsYTnm0KtI) |
-| Instagram | Publicação: buquê de tulipas coloridas | [9ZLQ2rrl-Hc](https://unsplash.com/photos/9ZLQ2rrl-Hc) |
-| Instagram | Publicação: rosas cor-de-rosa sobre fundo branco | [DTpKjgHpHj4](https://unsplash.com/photos/DTpKjgHpHj4) |
-| Instagram | Publicação: buquê de gérberas cor-de-rosa com eucalipto | [pKg5gTRjVLk](https://unsplash.com/photos/pKg5gTRjVLk) |
-| Instagram | Publicação: rosa cor-de-rosa em detalhe | [tiqUZG67ygQ](https://unsplash.com/photos/tiqUZG67ygQ) |
-| Instagram | Publicação: buquê de tulipas coral e cor-de-rosa | [7nvmTdvHaKk](https://unsplash.com/photos/7nvmTdvHaKk) |
-| Chamada final | Fundo da chamada final | [2c1ZIxAEXNM](https://unsplash.com/photos/2c1ZIxAEXNM) |
 
 Ícones: [Lucide](https://lucide.dev) (ISC) e [Font Awesome Free](https://fontawesome.com) (CC BY 4.0) para as marcas das redes sociais.
